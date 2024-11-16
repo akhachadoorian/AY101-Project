@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+
+body {
+    background-color: black;
+    /* margin: 0; */
+}
+
+h1 {
+    color: white;
+    font-family: Poppins;
+    /* font-size: 80px; */
+    font-size: max(10vw, 80px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 111.3%; /* 53.424px */
+    letter-spacing: 30.24px;
+    text-transform: uppercase;
+
+    text-align: center;
+    margin: 0 0 60px 0;
+}
+
+h2 {
+    color: white;
+    font-family: Poppins;
+    /* font-size: 4.5vw; */
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 111.3%; /* 44.52px */
+    letter-spacing: 25.2px;
+    text-transform: uppercase;
+
+    text-align: center;
+    margin: 0 0 60px 0;
+}
+
+h3 {
+    color: white;
+    font-family: Poppins;
+    /* font-size: 2.8vw; */
+    font-size: max(36px, 2.8vw);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 111.3%; /* 31.164px */
+    letter-spacing: 17.64px;
+    text-transform: uppercase;
+
+    margin: 0;
+}
+
+h4 {
+    color: white;
+    font-family: Poppins;
+    /* font-size: 2vw; */
+    font-size: max(30px, 2.1vw);
+    font-weight: 700;
+    /* text-transform: uppercase; */
+
+    margin: 0;
+}
+
+h6 {
+    color: white;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    margin: 0 0 5px 0;
+}
+
+p, li, a {
+    color: white;
+    font-family: Poppins;
+    font-size: 18px;
+    text-decoration: none;
+
+    margin: 0 0 5px 0;
+}
+
+strong {
+    text-transform: uppercase;
+}
+
+i {
+    color: white;
+    /* font-size: 24px; */
+}
+
+footer {
+    margin-top: 80px;
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+    
+        max-width: 60%;
+        margin: auto;
+        padding: 20px 0;
+    }
+
+    .line {
+        height: 2px;
+        background-color: white;
+        margin: 0 20px;
+    }
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 10px 20px;
+
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.58);
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(4.199999809265137px);
+
+    a {
+        color: #fff;
+        font-family: Poppins;
+        font-size: 2.5vw;
+        font-weight: 700;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        &:hover {
+        }
+    }
+    
+}
+
+.mars {
+    margin: 20px;
+
+    .planet-header {
+        text-align: center;
+        padding: 20px 120px;
+        width: fit-content;
+        margin: 20px auto 100px auto;
+
+        /* background: rgba(255, 255, 255, 0.06); */
+        /* backdrop-filter: blur(4.199999809265137px);
+        border-radius: 30px;
+        border: 1px solid rgba(255, 255, 255, 0.58); */
+
+        h1 {
+            width: fit-content;
+        }
+
+    }
+
+    
+
+    
+    
+    .img-holder.mars {
+        /* width: 100vw; */
+        height: 80vh;
+        margin: 0 0 80px 0;
+        padding: 30vh 0 0 0;
+        position: relative;
+
+        background-image: url("./images/mars.jpg");
+        background-position: center top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        box-shadow: 0px -27px 55px 25px #000 inset;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+
+        .appear-wrapper {
+            width: fit-content;
+        }
+
+        .appear {
+            width: 30vw;
+            padding: 40px 20px;
+            display: block;
+    
+            transition: all 1.5s;
+            opacity: 0;
+            
+            &.show {
+                opacity: 1;
+            }
+
+            h3, h4 {
+                text-align: center;
+                margin-bottom: 10px;
+                letter-spacing: 17.64px;
+            }
+
+            p {
+                text-align: l;
+                text-align: center;
+            }
+        }
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 60px;
+    } 
+
+    .comp {
+        margin-bottom: 80px;
+
+        .composition {
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+    
+            padding: 0 60px;
+            
+            .filler {
+                flex: 0 1 50%;
+            }
+    
+        }
+    }
+
+    .geo {
+        padding: 120px 20px;
+        margin-bottom: 80px;
+
+        .geological {
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch;
+            gap: 40px;
+
+            & > .glass-box {
+                flex: 0 1 33%;
+
+                .ph {
+                    font-size: 2vw;
+                    color: #fff;
+                }
+
+                .horizontal {
+                    display: flex;
+                    align-items: center;
+                    /* justify-content: center; */
+                    gap: 15px;
+                }
+            }
+        }
+    }
+
+    .summary-text {
+        padding: 30px 60px;
+        text-align: center;
+        
+        p {
+            color: #d25001;
+            font-size: 1.7em;
+        }
+    }
+}
+
+.filler {
+    background-color: gray;
+    min-height: 30px;
+    min-width: 30px;
+}
+
+.glass-box {
+    padding: 60px 40px;
+    margin-bottom: 40px;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 20px;
+
+    /* border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.58);
+    background: rgba(255, 255, 255, 0.06); */
+    z-index: 2;
+    & > * {
+        z-index: 2;
+        position: relative;
+    }
+
+     &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width : 100%;
+        height: 100%;
+
+        border-radius: 30px;
+        background: rgba(255, 255, 255, 0.06);
+        border: 1px solid rgba(255, 255, 255, 0.58);
+        backdrop-filter: blur(4.199999809265137px);
+
+        z-index: 1;
+     }
+}
+
+.icon-w-head {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.index {
+    h2, h4, i {
+        color:#7a89ac;
+    }
+
+    i {
+        font-size: max(30px, 3vw);
+    }
+
+    h4 {
+        /* flex: 0 1 80%; */
+    }
+
+    strong {
+        color: #b1abb2
+
+
+    }
+
+    .galaxy-header {
+        margin: 10px;
+        .galaxy {
+            background-image: url("./images/MilklyWay.jpg");
+            background-repeat: no-repeat;  
+            background-size: cover;
+            background-position: center;
+
+            /* box-shadow: 0px -27px 55px 25px #000; */
+
+            height: 100vh;
+            border-radius: 20px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+
+    .formation-solar-system {
+        margin: 120px 20px;
+
+        .formation {
+            display: flex;
+            justify-content: space-between;
+            gap: 60px;
+        
+            .glass-box {
+                flex: 0 1 30%;
+                margin: 0;
+
+
+            }
+        
+            i {
+                flex: 0 0 32px;
+                /* flex: 0 0 10%; */
+                display: flex;
+                align-items: center;
+                font-size: 4vw;
+            }
+        }
+    }
+
+    .planet-components {
+        margin: 120px 20px;
+
+        .planet-comp {
+            display: flex;
+            justify-content: space-between;
+            gap: 60px;
+
+            .glass-box {
+                flex: 0 1 50%;
+            }
+        }
+    }
+
+    .protoplanet-formation {
+        .proto-planet {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+
+            .text {
+                flex: 0 1 70%;
+            }
+
+            .filler { 
+                flex: 0 1 30%;
+            }
+        }
+    }
+}
