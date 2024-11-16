@@ -1,6 +1,8 @@
 import React from 'react';
+import { planetComponents } from "./homepageInfo.js";
 
 function Home() {
+      
   return (
     <div className="index">
       <div className="galaxy-header">
@@ -41,28 +43,45 @@ function Home() {
       <div className="planet-components">
           <h2>Components for Planet Building</h2>
           <div className="planet-comp" id="planet-comp">
-  
+            {Object.keys(planetComponents).slice(0, 2).map((key) => {
+            const component = planetComponents[key];
+            return (
+              <div className="glass-box" key={key}>
+                <div className="icon-w-head">
+                  <i className={`fa-solid fa-${component.icon}`}></i>
+                  <h4>{component.title}</h4>
+                </div>
+                {component.paragraph && <p>{component.paragraph}</p>}
+                <p>
+                  <strong>Relative Abundance by mass: </strong>
+                  {component.relativeAbundance}
+                </p>
+                {component.condensation && <p><strong>Typical condensation temperature: </strong> {component.condensation}</p>}
+                {component.examples && <p><strong>Examples:</strong> <span dangerouslySetInnerHTML={{ __html: component.examples }} /></p> }
+              </div>
+            );
+          })}
           </div>
 
           <div className="planet-comp">
-              <div className="glass-box">
-                  <div className="icon-w-head">
-                      <i className="fa-solid fa-mound"></i>
-                      <h4>Rocks</h4>
-                  </div>
-                  <p><strong>Relative Abundance by mass: </strong>0.4%</p>
-                  <p><strong>Typical condensation temperature: </strong>500 - 1300 K</p>
-                  <p><strong>Examples:</strong> Various minerals</p> 
-              </div>
-              <div className="glass-box">
-                  <div className="icon-w-head">
-                      <i className="fa-solid fa-mountain"></i>
-                      <h4>Metal</h4>
-                  </div>
-                  <p><strong>Relative Abundance by mass: </strong>0.2%</p>
-                  <p><strong>Typical condensation temperature: </strong>1000 - 1600 K</p>
-                  <p><strong>Examples:</strong> Iron, Nickel, and Aluminum</p> 
-              </div>
+            {Object.keys(planetComponents).slice(2, 4).map((key) => {
+                const component = planetComponents[key];
+                return (
+                <div className="glass-box" key={key}>
+                    <div className="icon-w-head">
+                    <i className={`fa-solid fa-${component.icon}`}></i>
+                    <h4>{component.title}</h4>
+                    </div>
+                    {component.paragraph && <p>{component.paragraph}</p>}
+                    <p>
+                    <strong>Relative Abundance by mass: </strong>
+                    {component.relativeAbundance}
+                    </p>
+                    {component.condensation && <p><strong>Typical condensation temperature: </strong> {component.condensation}</p>}
+                    {component.examples && <p><strong>Examples:</strong> <span dangerouslySetInnerHTML={{ __html: component.examples }} /></p> }
+                </div>
+                );
+            })}
           </div>
       </div>
 
