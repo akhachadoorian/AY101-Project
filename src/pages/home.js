@@ -9,6 +9,7 @@ import frostLineGraphic from "../images/Frostline.png";
 import frostTreeGraphic from "../images/FrostTree2.png";
 import CircleIconWHeader from "../components/CircleIconWHeader.jsx";
 import GlassboxStats from "../components/GlassboxStats.jsx";
+import SliderWithLinks from "../components/Slider.jsx";
 
 function Home() {
     var t = ["the Sun, eight planets, five dwarf planets, nearly 300 known moons, and a host of smaller objects"]
@@ -16,7 +17,7 @@ function Home() {
     <div className="index">
       <div className="galaxy-header">
         <div className="galaxy">
-          <h1>Milky Way</h1>
+          <h1>Solar System</h1>
           <div className="stats">
             {/* {Object.values(HomepageInfo.milkyWayStats).map((component, index) => (
                 <GlassboxStats 
@@ -31,6 +32,10 @@ function Home() {
           </div>
         </div>
       </div>
+
+        <div className="planets-slider">
+            <SliderWithLinks />
+        </div>
 
       <div className="formation-solar-system">
         <h2>Start to the Formation of the Solar System</h2>

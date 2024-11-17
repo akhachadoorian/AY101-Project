@@ -6,7 +6,7 @@ function GlassboxStats({ title, paragraphs }) {
   // }
 
   return (
-    <div className="glass-box">
+    <div className="glass-box appear">
       {title && <h3>{title}</h3>}
       {paragraphs && (
         <div className="text">
