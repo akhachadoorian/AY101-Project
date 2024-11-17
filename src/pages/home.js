@@ -1,5 +1,5 @@
 import React from "react";
-import * as HomepageInfo from "./homepageInfo.js";
+import * as HomepageInfo from "./info/homepageInfo.js";
 import PlanetComponent from "../components/PlanetComponent.jsx";
 import GlassboxWIcon from "../components/GlassboxWIcon.jsx";
 import TextWithImage from "../components/TextWithImage.jsx";

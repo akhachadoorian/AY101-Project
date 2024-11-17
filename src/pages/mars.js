@@ -2,9 +2,11 @@ import React from 'react';
 import "../mars.css"
 import GlassboxStats from "../components/GlassboxStats.jsx";
 
-import * as MarsInfo from "./marsInfo.js";
+import * as MarsInfo from "./info/marsInfo.js";
 import TextWithImage from '../components/TextWithImage.jsx';
 import GlassboxWIcon from '../components/GlassboxWIcon.jsx';
+
+import marsStructure from "../images/MarsStructure.svg";
 
 function Mars() {
     return (
@@ -39,8 +41,8 @@ function Mars() {
                     paragraphs={Object.values(MarsInfo.comp)}
                 /> */}
                 <div className="text-w-image comp">
-                    {/* <img src={image} alt={} /> */}
-                    <div className="filler"></div>
+                    <img src={marsStructure} alt={"Graphic of Mar's internal structure"} />
+                    {/* <div className="filler"></div> */}
                     <div className="text">
                         <div className='sub-text'>
                             <h3>Composition</h3>
