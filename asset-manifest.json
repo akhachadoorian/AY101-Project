@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/AY101-Project/static/css/main.afe9fc37.css",
-    "main.js": "/AY101-Project/static/js/main.36c02d78.js",
+    "main.css": "/AY101-Project/static/css/main.3541adc6.css",
+    "main.js": "/AY101-Project/static/js/main.3d407174.js",
     "static/js/453.ed3810f9.chunk.js": "/AY101-Project/static/js/453.ed3810f9.chunk.js",
     "static/media/mars.jpg": "/AY101-Project/static/media/mars.66b89b99537bae251252.jpg",
     "static/media/MilklyWay.jpg": "/AY101-Project/static/media/MilklyWay.91de81fbb6bf7740d6f6.jpg",
-    "static/media/logo.svg": "/AY101-Project/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/FrostTree2.png": "/AY101-Project/static/media/FrostTree2.2287412e3b93b5555b46.png",
+    "static/media/Frostline.png": "/AY101-Project/static/media/Frostline.9292c9f9c1fe8ed4339f.png",
     "index.html": "/AY101-Project/index.html",
-    "main.afe9fc37.css.map": "/AY101-Project/static/css/main.afe9fc37.css.map",
-    "main.36c02d78.js.map": "/AY101-Project/static/js/main.36c02d78.js.map",
+    "main.3541adc6.css.map": "/AY101-Project/static/css/main.3541adc6.css.map",
+    "main.3d407174.js.map": "/AY101-Project/static/js/main.3d407174.js.map",
     "453.ed3810f9.chunk.js.map": "/AY101-Project/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.afe9fc37.css",
-    "static/js/main.36c02d78.js"
+    "static/css/main.3541adc6.css",
+    "static/js/main.3d407174.js"
   ]
 }
