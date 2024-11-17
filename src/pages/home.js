@@ -1,100 +1,184 @@
-import React from 'react';
-import { planetComponents } from "./homepageInfo.js";
+import React from "react";
+import * as HomepageInfo from "./homepageInfo.js";
+import PlanetComponent from "../components/PlanetComponent.jsx";
+import GlassboxWIcon from "../components/GlassboxWIcon.jsx";
+import TextWithImage from "../components/TextWithImage.jsx";
+import ImportantInfo from "../components/ImportantInfo.jsx";
+
+import frostLineGraphic from "../images/Frostline.png";
+import frostTreeGraphic from "../images/FrostTree2.png";
+import CircleIconWHeader from "../components/CircleIconWHeader.jsx";
+import GlassboxStats from "../components/GlassboxStats.jsx";
 
 function Home() {
-      
+    var t = ["the Sun, eight planets, five dwarf planets, nearly 300 known moons, and a host of smaller objects"]
   return (
     <div className="index">
       <div className="galaxy-header">
-          <div className="galaxy">
-              <h1>Milky Way</h1>
+        <div className="galaxy">
+          <h1>Milky Way</h1>
+          <div className="stats">
+            {/* {Object.values(HomepageInfo.milkyWayStats).map((component, index) => (
+                <GlassboxStats 
+                    key={index}
+                    title={component.paragraph}
+                />
+            ))} */}
+            <GlassboxStats 
+                title={"Contains"}
+                paragraphs={HomepageInfo.milkyWayStats}
+            />
           </div>
+        </div>
       </div>
 
       <div className="formation-solar-system">
-          <h2>Start to the Formation of the Solar System</h2>
-          <div className="formation">
-              <div className="glass-box">
-                  <div className="icon-w-head">
-                      <i className="fa-brands fa-cloudflare"></i>
-                      <h4>Protosolar Nebula</h4>
-                  </div>
-                  <p>A protosolar nebula is a collapsing gas cloud that spins very slowly around a horizontal axis. This horizontal spinning causes the height of the gas cloud to decrease, as it is easier for the gas to fall in the direction perpendicular to its rotation.</p>
-              </div>
-              <div className="glass-box">
-                  <div className="icon-w-head">
-                      <i className="fa-solid fa-rotate-right"></i>
-                      <h4>Conservation of Momentum</h4>
-                  </div>
-                  
-                  <p>During its collapse, the material within the protosolar nebula congregates in the center. The aggregation of material, alongside the nebula's decrease in size, permits the nebula to conserve angular momentum, which increases its rotation speed, and causes it to flatten more quickly.</p>
-              </div>
-              <div className="glass-box">
-                  <div className="icon-w-head">
-                      <i className="fa-solid fa-temperature-arrow-up"></i>
-                      <h4>Energy Conversion</h4>
-                  </div>
-                  <p>The potential energy in the protosolar nebula is converted into thermal energy, increasing the temperature at the center of the gas cloud. This extremely hot center is where the protostar, which will be the Sun, is formed.</p>
-              </div>
-          </div>
+        <h2>Start to the Formation of the Solar System</h2>
+        <div className="formation">
+          {Object.values(HomepageInfo.formationParts).map(
+            (component, index) => (
+              <GlassboxWIcon
+                key={index}
+                title={component.title}
+                icon={component.icon}
+                paragraph={component.paragraph}
+              />
+            )
+          )}
+        </div>
       </div>
 
-
       <div className="planet-components">
-          <h2>Components for Planet Building</h2>
-          <div className="planet-comp" id="planet-comp">
-            {Object.keys(planetComponents).slice(0, 2).map((key) => {
-            const component = planetComponents[key];
-            return (
-              <div className="glass-box" key={key}>
-                <div className="icon-w-head">
-                  <i className={`fa-solid fa-${component.icon}`}></i>
-                  <h4>{component.title}</h4>
-                </div>
-                {component.paragraph && <p>{component.paragraph}</p>}
-                <p>
-                  <strong>Relative Abundance by mass: </strong>
-                  {component.relativeAbundance}
-                </p>
-                {component.condensation && <p><strong>Typical condensation temperature: </strong> {component.condensation}</p>}
-                {component.examples && <p><strong>Examples:</strong> <span dangerouslySetInnerHTML={{ __html: component.examples }} /></p> }
-              </div>
-            );
-          })}
-          </div>
+        <h2>Components for Planet Building</h2>
+        <div className="planet-comp" id="planet-comp">
+          {Object.values(HomepageInfo.planetComponents)
+            .slice(0, 4) // Limit to the first 2 items
+            .map((component, index) => (
+              <PlanetComponent
+                key={index}
+                title={component.title}
+                paragraph={component.paragraph}
+                relativeAbundance={component.relativeAbundance}
+                icon={component.icon}
+                examples={component.examples}
+              />
+            ))}
+        </div>
 
-          <div className="planet-comp">
-            {Object.keys(planetComponents).slice(2, 4).map((key) => {
-                const component = planetComponents[key];
-                return (
-                <div className="glass-box" key={key}>
-                    <div className="icon-w-head">
-                    <i className={`fa-solid fa-${component.icon}`}></i>
-                    <h4>{component.title}</h4>
-                    </div>
-                    {component.paragraph && <p>{component.paragraph}</p>}
-                    <p>
-                    <strong>Relative Abundance by mass: </strong>
-                    {component.relativeAbundance}
-                    </p>
-                    {component.condensation && <p><strong>Typical condensation temperature: </strong> {component.condensation}</p>}
-                    {component.examples && <p><strong>Examples:</strong> <span dangerouslySetInnerHTML={{ __html: component.examples }} /></p> }
-                </div>
-                );
-            })}
-          </div>
+        {/* <div className="planet-comp">
+          {Object.values(HomepageInfo.planetComponents)
+            .slice(2, 4) // Limit to the first 2 items
+            .map((component, index) => (
+              <PlanetComponent
+                key={index}
+                title={component.title}
+                paragraph={component.paragraph}
+                relativeAbundance={component.relativeAbundance}
+                icon={component.icon}
+                examples={component.examples}
+              />
+            ))}
+          </div> */}
       </div>
 
       <div className="protoplanet-formation">
-          <h2>Protoplanetary Core Formation</h2>
-          <div className="proto-planet">
-              <div className="text">
-                  <p>The nebula's center has a very high temperature, which decreases as you move to the outskirts. This temperature distribution affects the formation of protoplanetary cores — specifically their size and composition — by limiting the amount and type of material available.</p>
-                  <p>The <strong>frost line</strong>, located between the orbits of Mars and Jupiter, designates the position within the nebula where elements besides hydrogen begin to condense. Thus, planets formed within the frost line are composed of rock and metal, whereas planets formed outside the frost line are composed of rock, metal, and ice.</p>
-              </div>
-              <div className="filler"></div>
+        <h2>Protoplanetary Core Formation</h2>
+        <TextWithImage
+          paragraphs={Object.values(HomepageInfo.coreFormation)}
+          image={frostLineGraphic}
+          alt={"front line graphic"}
+        />
+        <div className="img-holder">
+          <img src={frostTreeGraphic} alt="frost li" />
+        </div>
+        <div className="frost">
+          <h3>Inside the frost line</h3>
+          <div className="inside">
+            <div className="mult-important-info">
+              <ImportantInfo
+                title={"Composition"}
+                info={HomepageInfo.frostLine.inside.composition}
+              />
+              <ImportantInfo
+                title={"Size"}
+                info={HomepageInfo.frostLine.inside.size}
+              />
+            </div>
+            <p style={{ flex: "0 1 65%" }}>
+              {HomepageInfo.frostLine.inside.paragraph}
+            </p>
           </div>
-          
+          <h3>Outside the frost line</h3>
+          <div className="outside">
+            <div className="mult-important-info">
+              <ImportantInfo
+                title={"Composition"}
+                info={HomepageInfo.frostLine.outside.composition}
+              />
+              <ImportantInfo
+                title={"Size"}
+                info={HomepageInfo.frostLine.outside.size}
+              />
+            </div>
+            <p style={{ flex: "0 1 65%" }}>
+              {HomepageInfo.frostLine.outside.paragraph}
+            </p>
+          </div>
+        </div>
+
+        <div className="frost-table">
+          {/* <div className='f-table'>
+                <div></div>
+            </div> */}
+
+          {/* <table className="frost-table">
+                <thead>
+                    <tr className='top'>
+                        <td></td>
+                        <td>Inside Frost Line</td>
+                        <td colSpan={2}>Outside Frost Line</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Terrestrial Planets</td>
+                        <td>Neptunian Planets</td>
+                        <td>Jovian Planets</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td className='type'>Composition</td>
+                        <td>Rock & Metal</td>
+                        <td>Hydrogen compounds around a rock and metal core.</td>
+                        <td>Hydrogen and helium cournd a hydrogen compound, rock, and metal core.</td>
+                    </tr>
+                    <tr>
+                        <td className='type'>Core Size</td>
+                        <td>&lt; 2 Earth Masses</td>
+                        <td>&gt; 2 Earth Masses</td>
+                        <td>&gt; 2 Earth Masses</td>
+                    </tr>
+                    <tr>
+                        <td className='type'>Envelope Size</td>
+                        <td>-</td>
+                        <td>&lt; 100 Earth Masses</td>
+                        <td>&gt; 100 Earth Masses</td>
+                    </tr>
+                </tbody>
+            </table> */}
+        </div>
+      </div>
+
+      <div className="overview">
+        <h2>Summary of the Solar System Formation</h2>
+        {Object.values(HomepageInfo.overviewSteps).map((component, index) => (
+          <CircleIconWHeader
+            key={index}
+            title={component.title}
+            icon={component.number}
+            color={"rgba(122, 137, 172, 0.3)"}
+          />
+        ))}
       </div>
     </div>
   );
