@@ -1,23 +1,31 @@
 {
   "files": {
-    "main.css": "/AY101-Project/static/css/main.25cf7059.css",
-    "main.js": "/AY101-Project/static/js/main.0b9297e7.js",
+    "main.css": "/AY101-Project/static/css/main.7c7083f2.css",
+    "main.js": "/AY101-Project/static/js/main.73e7f837.js",
     "static/js/453.ed3810f9.chunk.js": "/AY101-Project/static/js/453.ed3810f9.chunk.js",
+    "static/media/Earth.jpg": "/AY101-Project/static/media/Earth.b277553b7aae3d3042c1.jpg",
+    "static/media/Venus.jpg": "/AY101-Project/static/media/Venus.4555964a582177523f52.jpg",
+    "static/media/Mercury.jpg": "/AY101-Project/static/media/Mercury.863edca9d3ac8f38a087.jpg",
+    "static/media/Jupiter.jpg": "/AY101-Project/static/media/Jupiter.e981f31c110235199aed.jpg",
     "static/media/mars.jpg": "/AY101-Project/static/media/mars.66b89b99537bae251252.jpg",
     "static/media/MilklyWay.jpg": "/AY101-Project/static/media/MilklyWay.91de81fbb6bf7740d6f6.jpg",
     "static/media/FrostTree2.png": "/AY101-Project/static/media/FrostTree2.2287412e3b93b5555b46.png",
+    "static/media/Uranus.jpg": "/AY101-Project/static/media/Uranus.88eb911d7d882a21dab0.jpg",
     "static/media/Frostline.png": "/AY101-Project/static/media/Frostline.9292c9f9c1fe8ed4339f.png",
+    "static/media/Neptune.jpg": "/AY101-Project/static/media/Neptune.e776704c9f89d15ce616.jpg",
+    "static/media/MarsStructure.svg": "/AY101-Project/static/media/MarsStructure.61f8c01a46ad18c82b20325a97ba755b.svg",
+    "static/media/Saturn.jpg": "/AY101-Project/static/media/Saturn.6aafad104340e8310660.jpg",
     "static/media/slick.svg": "/AY101-Project/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/AY101-Project/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/AY101-Project/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/AY101-Project/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/AY101-Project/index.html",
-    "main.25cf7059.css.map": "/AY101-Project/static/css/main.25cf7059.css.map",
-    "main.0b9297e7.js.map": "/AY101-Project/static/js/main.0b9297e7.js.map",
+    "main.7c7083f2.css.map": "/AY101-Project/static/css/main.7c7083f2.css.map",
+    "main.73e7f837.js.map": "/AY101-Project/static/js/main.73e7f837.js.map",
     "453.ed3810f9.chunk.js.map": "/AY101-Project/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.25cf7059.css",
-    "static/js/main.0b9297e7.js"
+    "static/css/main.7c7083f2.css",
+    "static/js/main.73e7f837.js"
   ]
 }
