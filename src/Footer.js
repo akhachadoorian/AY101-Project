@@ -5,7 +5,7 @@ function Footer() {
     <footer className="footer">
       <div className="footer-content">
         <p>&copy; 2024 Alex Khachadoorian - AY101 Project</p>
-        <a href="/">Citations</a>
+        <a href="/citations">Citations</a>
       </div>
     </footer>
   );

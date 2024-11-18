@@ -1,4 +1,5 @@
 import React from "react";
+// <!-- https://images.nasa.gov/details/GSFC_20171208_Archive_e001738 -->
 import * as HomepageInfo from "./info/homepageInfo.js";
 import PlanetComponent from "../components/PlanetComponent.jsx";
 import GlassboxWIcon from "../components/GlassboxWIcon.jsx";
@@ -12,7 +13,6 @@ import GlassboxStats from "../components/GlassboxStats.jsx";
 import SliderWithLinks from "../components/Slider.jsx";
 
 function Home() {
-    var t = ["the Sun, eight planets, five dwarf planets, nearly 300 known moons, and a host of smaller objects"]
   return (
     <div className="index">
       <div className="galaxy-header">
@@ -25,17 +25,17 @@ function Home() {
                     title={component.paragraph}
                 />
             ))} */}
-            <GlassboxStats 
-                title={"Contains"}
-                paragraphs={HomepageInfo.milkyWayStats}
+            <GlassboxStats
+              title={"Contains"}
+              paragraphs={HomepageInfo.milkyWayStats}
             />
           </div>
         </div>
       </div>
 
-        <div className="planets-slider">
-            <SliderWithLinks />
-        </div>
+      <div className="planets-slider">
+        <SliderWithLinks />
+      </div>
 
       <div className="formation-solar-system">
         <h2>Start to the Formation of the Solar System</h2>
@@ -93,41 +93,48 @@ function Home() {
           image={frostLineGraphic}
           alt={"front line graphic"}
         />
-        <div className="img-holder">
+
+        <div className="img-holder-frost">
           <img src={frostTreeGraphic} alt="frost li" />
         </div>
+
         <div className="frost">
-          <h3>Inside the frost line</h3>
-          <div className="inside">
-            <div className="mult-important-info">
-              <ImportantInfo
-                title={"Composition"}
-                info={HomepageInfo.frostLine.inside.composition}
-              />
-              <ImportantInfo
-                title={"Size"}
-                info={HomepageInfo.frostLine.inside.size}
-              />
+          <div  className="inside-frost">
+            <h3>Inside the frost line</h3>
+            <div className="inside">
+              <div className="mult-important-info">
+                <ImportantInfo
+                  title={"Composition"}
+                  info={HomepageInfo.frostLine.inside.composition}
+                />
+                <ImportantInfo
+                  title={"Size"}
+                  info={HomepageInfo.frostLine.inside.size}
+                />
+              </div>
+              <p style={{ flex: "0 1 65%" }}>
+                {HomepageInfo.frostLine.inside.paragraph}
+              </p>
             </div>
-            <p style={{ flex: "0 1 65%" }}>
-              {HomepageInfo.frostLine.inside.paragraph}
-            </p>
           </div>
-          <h3>Outside the frost line</h3>
-          <div className="outside">
-            <div className="mult-important-info">
-              <ImportantInfo
-                title={"Composition"}
-                info={HomepageInfo.frostLine.outside.composition}
-              />
-              <ImportantInfo
-                title={"Size"}
-                info={HomepageInfo.frostLine.outside.size}
-              />
+          
+          <div className="outside-frost">
+            <h3>Outside the frost line</h3>
+            <div className="outside">
+              <div className="mult-important-info">
+                <ImportantInfo
+                  title={"Composition"}
+                  info={HomepageInfo.frostLine.outside.composition}
+                />
+                <ImportantInfo
+                  title={"Size"}
+                  info={HomepageInfo.frostLine.outside.size}
+                />
+              </div>
+              <p style={{ flex: "0 1 65%" }}>
+                {HomepageInfo.frostLine.outside.paragraph}
+              </p>
             </div>
-            <p style={{ flex: "0 1 65%" }}>
-              {HomepageInfo.frostLine.outside.paragraph}
-            </p>
           </div>
         </div>
 
