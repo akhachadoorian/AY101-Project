@@ -4,14 +4,13 @@ import * as MarsInfo from "./info/marsInfo.js";
 // <!-- https://science.nasa.gov/mars/facts/ -->
 // <!-- https://www.publicdomainpictures.net/en/free-download.php?image=mars&id=86459 -->
 
-import GlassboxStats from "../components/GlassboxStats.jsx";
-import GlassboxWIcon from '../components/GlassboxWIcon.jsx';
 import PlanetHeader from '../components/PlanetHeader.jsx';
 
 import marsStructure from "../images/MarsStructure.svg";
 import marsImg from "../images/mars.jpg"
 import CompStructSize from '../components/CompStructSize.jsx';
 import GeologicalActivity from '../components/GeologicalActivity.jsx';
+import BottomNavBtn from '../components/BottomNavBtn.jsx';
 
 function Mars() {
     return (
@@ -36,6 +35,8 @@ function Mars() {
                 summaryText={"In summary, the planet previously had volcanoes, plate tectonics, and a magnetic field. The cooling of the internals of the planet resulted in the lose of these items."}
                 color={"var(--mars)"}
             />
+
+            <BottomNavBtn currPlanet={"Mars"} />
 
         </div>
     )

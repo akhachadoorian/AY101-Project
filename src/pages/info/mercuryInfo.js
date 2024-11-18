@@ -51,11 +51,17 @@ export const geological = {
 }
 
 export const comp = {
-    p1: "",
+    p1: "As the diagram shows, Mercury's core accounts for 60% of its overall mass. It is composed of iron and nickel.",
     p2: "",
     p3: ""
+}
+
+export const structure = {
+    p1: "",
 }
 
 export const size = {
     p: ""
 }
+
+
