@@ -11,8 +11,11 @@ import marsImg from "../images/mars.jpg"
 import CompStructSize from '../components/CompStructSize.jsx';
 import GeologicalActivity from '../components/GeologicalActivity.jsx';
 import BottomNavBtn from '../components/BottomNavBtn.jsx';
+import Differentiation from '../components/Differentation.jsx';
 
 function Mars() {
+    var planetColor = "var(--mars)";
+
     return (
         <div className="mars">
             <PlanetHeader 
@@ -27,13 +30,18 @@ function Mars() {
                 composition={Object.values(MarsInfo.comp)}
                 size={Object.values(MarsInfo.size)}
                 planetSize={"Medium"}
-                color={"var(--mars"}
+                color={'mars'}
+                planetType={"Terrestrial"}
+            />
+
+            <Differentiation
+                color={planetColor}
             />
 
             <GeologicalActivity 
                 geological={Object.values(MarsInfo.geological)}
                 summaryText={"In summary, the planet previously had volcanoes, plate tectonics, and a magnetic field. The cooling of the internals of the planet resulted in the lose of these items."}
-                color={"var(--mars)"}
+                color={planetColor}
             />
 
             <BottomNavBtn currPlanet={"Mars"} />

@@ -35,33 +35,37 @@ export const geological = {
     volcano: {
         title: 'Volcanoes',
         icon: 'volcano',
-        paragraphs: ""
+        paragraphs: "Mercury has no volcanic activity because its interior has cooled. Consequently, the planet lacks an atmosphere."
 
     },
     plateTec: {
         title: "Plate Tectonics",
         icon: 'house-crack',
-        paragraphs: ''
+        paragraphs: 'The surface of Mercury is marked by numerous craters, a clear indication of its lack of plate tectonics. These craters, created by countless asteroid impacts over billions of years, reveal a planet that has remained largely unchanged since its formation, as there are no tectonic plates to renew or reshape its surface.'
     },
     magnet: {
         title: "Magnetic Field",
         icon: 'magnet',
-        paragraphs: ""
+        paragraphs: "Despite assumptions that Mercury lacks a magnetic field due to its small size, it actually possesses one. This surprising fact suggests that some part of Mercury's core is, in fact, liquid."
     },
 }
 
+export const structure = {
+    p1: "Mercury's density increases as you move closer to its core, a result of the planet being differentiated."
+}
+
 export const comp = {
-    p1: "As the diagram shows, Mercury's core accounts for 60% of its overall mass. It is composed of iron and nickel.",
+    p1: "Mercury’s core constitutes a significant 60% of the planet's total mass. This dense core is predominantly made up of iron and nickel. The outer layers of the planet are composed of silicates.",
     p2: "",
     p3: ""
 }
 
-export const structure = {
-    p1: "",
+export const surface = {
+    p1: "Mercury's gray surface is covered in craters and basins and resembles the Moon. Surprisingly, water ice has been detected in craters near the planet's poles. An important feature on Mercury's surface is called <strong>scraps</strong>, which are cliffs theorized to have formed when the planet's surface wrinkled as the interior layers cooled. ",
 }
 
 export const size = {
-    p: ""
+    p: "Mercury is the smallest planet in our solar system. Due to the planet's small size, its internals of the planet cooled quickly."
 }
 
 

@@ -5,6 +5,7 @@ import PlanetHeader from '../components/PlanetHeader.jsx';
 import uranusImg from '../images/Uranus.jpg'
 import CompStructSize from '../components/CompStructSize.jsx';
 import GeologicalActivity from '../components/GeologicalActivity.jsx';
+import BottomNavBtn from '../components/BottomNavBtn.jsx';
 
 function Uranus() {
     var planetColor = "var(--saturn)";
@@ -29,6 +30,10 @@ function Uranus() {
                 geological={Object.values(UranusInfo.geological)}
                 // summaryText={""}
                 color={planetColor}
+            />
+
+            <BottomNavBtn 
+                currPlanet={"Uranus"}
             />
         </div>
     )

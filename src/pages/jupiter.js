@@ -5,6 +5,7 @@ import PlanetHeader from '../components/PlanetHeader.jsx';
 import jupiterImg from '../images/Jupiter.jpg'
 import CompStructSize from '../components/CompStructSize.jsx';
 import GeologicalActivity from '../components/GeologicalActivity.jsx';
+import BottomNavBtn from '../components/BottomNavBtn.jsx';
 
 function Jupiter() {
     var planetColor = "var(--jupiter)";
@@ -29,6 +30,10 @@ function Jupiter() {
                 geological={Object.values(JupiterInfo.geological)}
                 // summaryText={""}
                 color={planetColor}
+            />
+
+            <BottomNavBtn 
+                currPlanet={"Jupiter"}
             />
         </div>
     )

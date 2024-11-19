@@ -5,6 +5,7 @@ import PlanetHeader from '../components/PlanetHeader.jsx';
 import neptuneImg from '../images/Neptune.jpg'
 import CompStructSize from '../components/CompStructSize.jsx';
 import GeologicalActivity from '../components/GeologicalActivity.jsx';
+import BottomNavBtn from '../components/BottomNavBtn.jsx';
 
 function Neptune() {
     var planetColor = "var(--neptune)";
@@ -29,6 +30,10 @@ function Neptune() {
                 geological={Object.values(NeptuneInfo.geological)}
                 // summaryText={""}
                 color={planetColor}
+            />
+
+            <BottomNavBtn 
+                currPlanet={"Neptune"}
             />
         </div>
     )

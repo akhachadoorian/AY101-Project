@@ -8,6 +8,8 @@ import mercuryStructure from '../images/MercuryStructure.svg'
 
 import CompStructSize from '../components/CompStructSize.jsx';
 import GeologicalActivity from '../components/GeologicalActivity.jsx';
+import Differentiation from '../components/Differentation.jsx';
+import BottomNavBtn from '../components/BottomNavBtn.jsx';
 
 function Mercury() {
     var planetColor = "var(--mercury)";
@@ -24,8 +26,15 @@ function Mercury() {
             <CompStructSize 
                 composition={Object.values(MercuryInfo.comp)}
                 size={Object.values(MercuryInfo.size)}
+                surface={Object.values(MercuryInfo.surface)}
+                structure={Object.values(MercuryInfo.structure)}
                 structureImg={mercuryStructure}
                 planetSize={"Small"}
+                color={'mercury'}
+                planetType={"Terrestrial"}
+            />
+
+            <Differentiation 
                 color={planetColor}
             />
 
@@ -34,8 +43,11 @@ function Mercury() {
                 // summaryText={""}
                 color={planetColor}
             />
-        </div>
 
+            <BottomNavBtn 
+                currPlanet={"Mercury"}
+            />
+        </div>
 
     )
 

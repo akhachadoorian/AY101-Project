@@ -3,16 +3,51 @@
 
 :root {
     --home: rgba(122, 137, 172, 0.3);
-    --mercury: #8b8b8b;
-    --venus: #cb8d2c;
-    --earth: #3d637e;
-    --mars: rgba(174, 101, 74, 1);
-    --jupiter: #a18f69;
-    --saturn: #caa883;
-    --uranus: #b6dcdf;
-    --neptune: #a2c8ee;
-}
 
+    --mercury: #8b8b8b;
+    --mercuryLight: #FFFDFD;
+    --mercuryMedium: #DCDCDC;
+    --mercuryDark: #535353;
+
+    --venus: #cb8d2c;
+    --venusLight: #EFDDC0;
+    --venusMedium: #E0BB80;
+    --venusDark: #7A551A;
+
+    --earth: #3d637e;
+    --earthLight: #CAD5DE;
+    --earthMedium: #839CAE;
+    --earthDark: #253B4C;
+
+    --mars: #ae654a;
+    --marsLight: #F7F0ED;
+    --marsMedium: #CEA392;
+    --marsDark: #683D2C;
+
+    --jupiter: #a18f69;
+    --jupiterLight: #D9D2C3;
+    --jupiterMedium: #B4A587;
+    --jupiterMedium2: #61563F;
+    --jupiterDark: #40392A;
+
+    --saturn: #caa883;
+    --saturnLight: #DFCBB5;
+    --saturnMedium: #846C53;
+    --saturnMedium2: #4F402F;
+    --saturnDark: #604F3B;
+
+    --uranus: #89D6DC;
+    --uranusLight: #B8E6EA;
+    --uranusMedium: #589297;
+    --uranusMedium2: #336063;
+    --uranusDark: #336063;
+
+    --neptune: #a2c8ee;
+    --neptuneLight: #C7DEF5;
+    --neptuneMedium: #4A6F94;
+    --neptuneMedium2: #2D5276;
+    --neptuneDark: #1F4367;
+}
 
 body {
     background-color: black;
@@ -307,6 +342,19 @@ COMP STRUCT SIZE
 .comp {
     margin: 0 60px 80px 60px;
 
+    .structure {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+    }
+
+    .line {
+        height: 3px;
+        background-color: #fff;
+        margin: 40px 0;
+    }
+
     .composition {
         display: flex;
         justify-content: space-between;
@@ -334,6 +382,58 @@ COMP STRUCT SIZE
         }
     }
 }
+
+/* 
+========================================
+DIFFERENTIATION
+========================================
+*/
+.differentiation {
+    margin: 60px;
+    transition: all 0.3s ease;
+
+    .diff-inner {
+        padding: 40px;
+        border-radius: 30px;
+        border: 2px solid #fff;
+    }
+
+    .chevron {
+        transform: rotate(0deg);
+    }
+
+    .chevron.rotated {
+        transform: rotate(180deg);
+    }
+
+    .diff-header {
+        display: flex;
+        justify-content: space-between;
+
+        
+        
+        i {
+            transition: all ease-in-out 300ms;
+        }
+
+        h3 {
+            margin-bottom: 0;
+        }
+    }
+    .diff-content {
+        transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+        transition: all 0.3s ease;
+        padding-left: 30px;
+    }
+    .diff-content.open {
+        
+    }
+    
+    .diff-content.closed {
+        /* padding: 0; */
+    }
+}
+
 
 /* 
 ========================================

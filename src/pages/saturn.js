@@ -5,6 +5,7 @@ import PlanetHeader from '../components/PlanetHeader.jsx';
 import saturnImg from '../images/Saturn.jpg'
 import CompStructSize from '../components/CompStructSize.jsx';
 import GeologicalActivity from '../components/GeologicalActivity.jsx';
+import BottomNavBtn from '../components/BottomNavBtn.jsx';
 
 function Saturn() {
     var planetColor = "var(--saturn)";
@@ -29,6 +30,10 @@ function Saturn() {
                 geological={Object.values(SaturnInfo.geological)}
                 // summaryText={""}
                 color={planetColor}
+            />
+
+            <BottomNavBtn 
+                currPlanet={"Saturn"}
             />
         </div>
     )
