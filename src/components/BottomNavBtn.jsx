@@ -100,9 +100,9 @@ function BottomNavBtn({ currPlanet }) {
 
     var leftPlanetName = planets[currPlanet].left;
     var leftPlanet = planets[leftPlanetName];
-    console.log(leftPlanet)
 
-    var rightPlanet = planets[currPlanet].right;
+    var rightPlanetName = planets[currPlanet].right;
+    var rightPlanet = planets[rightPlanetName];
 
 
     return (
@@ -111,16 +111,15 @@ function BottomNavBtn({ currPlanet }) {
             <div className='left-planet'>
                 <Link 
                     to={leftPlanet.link}
-                    // className='glass-box'
+                    className='bottom-link'
                 >
-                    {/* <i class="fa-solid fa-arrow-left-long"></i> */}
-                    {/* <span>{leftPlanet}</span> */}
-                        {/* <img src={leftPlanet.img}/> */}
-                        <div
-                            className="img-holder-planet"
-                            style={{ backgroundImage: `url(${leftPlanet.img})` }}
-                        ></div>
-                        <span>{leftPlanetName}</span> 
+                    <div
+                        style={{backgroundColor: leftPlanet.color}}
+                        className='circle-btn'
+                    >
+                        <i class="fa-solid fa-arrow-left-long"></i>
+                    </div>
+                    <span>{leftPlanetName}</span> 
                 </Link>
             </div>
             {/* return to home page */}
@@ -130,17 +129,21 @@ function BottomNavBtn({ currPlanet }) {
                     className='glass-box'
                 >
                     <i class="fa-solid fa-house"></i>
-                    {/* <span>Home</span> */}
                 </Link>
             </div>
             {/* right planet */}
             <div className='right-planet'>
                 <Link 
-                        to={rightPlanet.link}
-                        className='glass-box'
+                    to={rightPlanet.link}
+                    className='bottom-link'
+                >
+                    <span>{rightPlanetName}</span>
+                    <div
+                        style={{backgroundColor: rightPlanet.color}}
+                        className='circle-btn'
                     >
                         <i class="fa-solid fa-arrow-right-long"></i>
-                        <span>{rightPlanet}</span>
+                    </div>
                     </Link>
             </div>
         </div>

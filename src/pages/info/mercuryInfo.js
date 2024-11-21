@@ -41,7 +41,7 @@ export const geological = {
     plateTec: {
         title: "Plate Tectonics",
         icon: 'house-crack',
-        paragraphs: 'The surface of Mercury is marked by numerous craters, a clear indication of its lack of plate tectonics. These craters, created by countless asteroid impacts over billions of years, reveal a planet that has remained largely unchanged since its formation, as there are no tectonic plates to renew or reshape its surface.'
+        paragraphs: 'The surface of Mercury is marked by numerous craters, a clear indication of its lack of plate tectonics. The lack of plate tectonics is a result of the planet’s cold interior. '
     },
     magnet: {
         title: "Magnetic Field",
@@ -56,8 +56,6 @@ export const structure = {
 
 export const comp = {
     p1: "Mercury’s core constitutes a significant 60% of the planet's total mass. This dense core is predominantly made up of iron and nickel. The outer layers of the planet are composed of silicates.",
-    p2: "",
-    p3: ""
 }
 
 export const surface = {

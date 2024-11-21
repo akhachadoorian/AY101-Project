@@ -1,5 +1,18 @@
 .earth {
-    strong {
+    strong,h2, h3 {
         color: var(--earth)
+    }
+
+    .moon {
+        display: flex;
+
+        .table {
+            flex: 1 0 55%;
+            padding-right: 0;
+        }
+
+        img {
+            max-width: 100%;
+        }
     }
 }

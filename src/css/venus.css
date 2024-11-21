@@ -1,5 +1,32 @@
 .venus {
-    strong {
+    strong, h4, h2 {
         color: var(--venus)
+    }
+
+    .greenhouse {
+        display: flex;
+        align-items: center;
+        /* flex-direction: column; */
+        gap: 60px;
+
+        .greenhouse-inner {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+
+            flex: 1 1 70%;
+
+        }
+
+        & > .glass-box {
+            flex: 1 1 30%;
+        }
+
+        h4 {
+            margin-bottom: 20px;
+        }
+    }
+    img {
+        max-width: 100%;
     }
 }

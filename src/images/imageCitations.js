@@ -19,7 +19,8 @@ export const cites = {
         venus: 'https://images.nasa.gov/details/PIA00271'
     },
     earth: {
-        earth: 'https://images.nasa.gov/details/PIA18033'
+        earth: 'https://images.nasa.gov/details/PIA18033',
+        moon: 'https://science.nasa.gov/moon/'
     },
     mars: {},
     jupiter: {
@@ -34,4 +35,5 @@ export const cites = {
     neptune: {
         neptune: 'https://images.nasa.gov/details/PIA00046'
     }
+
 }

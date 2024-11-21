@@ -157,6 +157,10 @@ i {
     font-size: max(30px, 3vw);
 }
 
+section {
+    padding: 100px 60px;
+}
+
 footer {
     margin-top: 80px;
 
@@ -340,13 +344,17 @@ COMP STRUCT SIZE
 ========================================
 */
 .comp {
-    margin: 0 60px 80px 60px;
+    margin: 0 0px 80px 0px;
 
     .structure {
         display: flex;
         flex-direction: column;
         justify-content: center;
         /* align-items: center; */
+
+        img {
+            max-width: 100%;
+        }
     }
 
     .line {
@@ -451,7 +459,7 @@ GEOLOGICAL ACTIVITY
         gap: 40px;
 
         & > .glass-box {
-            flex: 0 1 33%;
+            flex: 1 1 33%;
 
             .ph {
                 font-size: 2vw;
@@ -493,29 +501,33 @@ BOTTOM NAV BTN
     margin: 60px;
 
     display: flex;
+    align-items: center;
     justify-content: space-between;
 
-    /* a {
-        border-radius: 30px;
-        box-shadow: 0 0 5px #fff;
+    .bottom-link {
+        display: flex;
+        align-items: center;
+        gap: 30px;
 
-        overflow: hidden;
+        .circle-btn {
+            border-radius: 100%;
+            padding: 20px;
+            transition: all ease-in-out 300ms;
+            border: 2px solid;
+        }
 
-        &:hover::before {
-            top: 0;
+        span {
+            font-size:  4.5vw;
+            text-transform: uppercase;
         }
-        &::before {
-            content: "";
-            position: absolute;
-            top: 100%;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(221, 221, 221, 0.3);
-            transition: .5s;
-            z-index: 2;
+
+        &:hover {
+            .circle-btn {
+                padding: 40px;
+            }
         }
-    } */
+
+    }
 
     .left-planet {
         /* span::before{
@@ -536,6 +548,34 @@ BOTTOM NAV BTN
         
     }
 }
+
+/* 
+========================================
+TABLE
+========================================
+*/
+.table {
+    padding: 100px;
+
+    h3 {
+        margin-bottom: 0;
+        padding: 25px;
+        border-bottom: 3px solid white;
+    }
+
+    .element {
+        display: flex;
+        justify-content: space-between;
+        gap: 100px;
+        padding: 25px 50px;
+        border-bottom: 3px solid;
+
+        h4 {
+            margin-bottom: 0;
+        }
+    }
+}
+
 
 /* 
 ========================================

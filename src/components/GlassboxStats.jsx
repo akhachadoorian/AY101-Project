@@ -7,7 +7,7 @@ function GlassboxStats({ title, paragraphs }) {
 
   return (
     <div className="glass-box appear">
-      {title && <h3>{title}</h3>}
+      {title && <h3  style={{color: "#fff"}}>{title}</h3>}
       {paragraphs && (
         <div className="text">
           {paragraphs.map((p, index) => (
