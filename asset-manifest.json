@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/AY101-Project/static/css/main.7c7083f2.css",
-    "main.js": "/AY101-Project/static/js/main.73e7f837.js",
+    "main.css": "/AY101-Project/static/css/main.b00e721d.css",
+    "main.js": "/AY101-Project/static/js/main.47016c29.js",
     "static/js/453.ed3810f9.chunk.js": "/AY101-Project/static/js/453.ed3810f9.chunk.js",
     "static/media/Earth.jpg": "/AY101-Project/static/media/Earth.b277553b7aae3d3042c1.jpg",
     "static/media/Venus.jpg": "/AY101-Project/static/media/Venus.4555964a582177523f52.jpg",
@@ -15,17 +15,18 @@
     "static/media/Neptune.jpg": "/AY101-Project/static/media/Neptune.e776704c9f89d15ce616.jpg",
     "static/media/MarsStructure.svg": "/AY101-Project/static/media/MarsStructure.61f8c01a46ad18c82b20325a97ba755b.svg",
     "static/media/Saturn.jpg": "/AY101-Project/static/media/Saturn.6aafad104340e8310660.jpg",
+    "static/media/MercuryStructure.svg": "/AY101-Project/static/media/MercuryStructure.e75ef5213d27e46789bfc5a208a5eab8.svg",
     "static/media/slick.svg": "/AY101-Project/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/AY101-Project/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/AY101-Project/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/AY101-Project/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/AY101-Project/index.html",
-    "main.7c7083f2.css.map": "/AY101-Project/static/css/main.7c7083f2.css.map",
-    "main.73e7f837.js.map": "/AY101-Project/static/js/main.73e7f837.js.map",
+    "main.b00e721d.css.map": "/AY101-Project/static/css/main.b00e721d.css.map",
+    "main.47016c29.js.map": "/AY101-Project/static/js/main.47016c29.js.map",
     "453.ed3810f9.chunk.js.map": "/AY101-Project/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7c7083f2.css",
-    "static/js/main.73e7f837.js"
+    "static/css/main.b00e721d.css",
+    "static/js/main.47016c29.js"
   ]
 }
