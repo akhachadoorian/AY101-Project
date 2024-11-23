@@ -25,17 +25,18 @@ function CompStructSize({ structureImg = defaultStructure, planetType, structure
                         :
                         planetType == "Jovian" ?
                             <div className='glass-box' style={{maxWidth: "80%"}}>
-                                <p><strong style={{color: lightColor}}>Core of rock, metals, and hydrogen compounds</strong></p>
-                                <p><strong style={{color: mediumColor}}>Mantle:</strong></p>
-                                <p><strong style={{color: mainColor}}>Rocky Crust:</strong></p>
-                                <p><strong style={{color: darkColor}}>Rigid Lithosphere:</strong></p>
+                                <p><strong style={{color: lightColor}}>Core of Rock, Metals, and Hydrogen Compounds</strong></p>
+                                <p><strong style={{color: mainColor}}>Metallic Hydrogen</strong></p>
+                                <p><strong style={{color: mediumColor}}>Liquid Hydrogen</strong></p>
+                                <p><strong style={{color: mediumColor2}}>Gaseous Hydrogen</strong></p>
+                                <p><strong style={{color: darkColor}}>Visible Clouds</strong></p>
                             </div>
                             :
                             <div className='glass-box' style={{maxWidth: "80%"}}>
-                                <p><strong style={{color: lightColor}}>Metal core:</strong></p>
-                                <p><strong style={{color: mediumColor}}>Mantle:</strong></p>
-                                <p><strong style={{color: mainColor}}>Rocky Crust:</strong></p>
-                                <p><strong style={{color: darkColor}}>Rigid Lithosphere:</strong></p>
+                                <p><strong style={{color: lightColor}}>Core of  Rock & Metal</strong></p>
+                                <p><strong style={{color: mainColor}}>Water & Methane & Ammonia</strong></p>
+                                <p><strong style={{color: mediumColor}}>Gaseous Hydrogen</strong></p>
+                                <p><strong style={{color: darkColor}}>Visible Clouds</strong></p>
                             </div>
                     }
                 </div>
@@ -70,7 +71,7 @@ function CompStructSize({ structureImg = defaultStructure, planetType, structure
                     }
                     { size && 
                         <div className='sub-text'>
-                            <h3>Size: <strong>{planetSize}</strong></h3>
+                            <h3 style={{color: '#fff'}}>Size: <strong>{planetSize}</strong></h3>
                                 {size.map((p, index) => (
                                     <p dangerouslySetInnerHTML={{ __html: p }} key={index}></p>
                                 ))}

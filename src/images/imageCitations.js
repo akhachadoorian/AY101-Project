@@ -13,7 +13,7 @@ export const cites = {
     },
     mercury: {
         mercury: 'https://images.nasa.gov/details/PIA15161',
-        mercuryPart: 'https://images.nasa.gov/details/PIA10398',
+        // mercuryPart: 'https://images.nasa.gov/details/PIA10398',
     },
     venus: {
         venus: 'https://images.nasa.gov/details/PIA00271'
@@ -22,12 +22,17 @@ export const cites = {
         earth: 'https://images.nasa.gov/details/PIA18033',
         moon: 'https://science.nasa.gov/moon/'
     },
-    mars: {},
+    mars: {
+        mars: "https://www.publicdomainpictures.net/en/view-image.php?image=86459&picture=mars"
+    },
     jupiter: {
         jupiter: 'https://images.nasa.gov/details/PIA22946',
+        io: 'https://science.nasa.gov/resource/high-resolution-global-view-of-io/',
+        europa: 'https://images.nasa.gov/details/PIA02528'
     },
     saturn: {
-        saturn: 'https://esahubble.org/news/heic1917/'
+        saturn: 'https://esahubble.org/news/heic1917/',
+        enceladus: 'https://images.nasa.gov/details/JPL-2015_10_28-PIA17202'
     },
     uranus: {
         uranus: 'https://images.nasa.gov/details/PIA18182',
@@ -37,3 +42,4 @@ export const cites = {
     }
 
 }
+

@@ -117,7 +117,7 @@ function BottomNavBtn({ currPlanet }) {
                         style={{backgroundColor: leftPlanet.color}}
                         className='circle-btn'
                     >
-                        <i class="fa-solid fa-arrow-left-long"></i>
+                        <i className="fa-solid fa-arrow-left-long"></i>
                     </div>
                     <span>{leftPlanetName}</span> 
                 </Link>
@@ -128,7 +128,7 @@ function BottomNavBtn({ currPlanet }) {
                     to={"/"}
                     className='glass-box'
                 >
-                    <i class="fa-solid fa-house"></i>
+                    <i className="fa-solid fa-house"></i>
                 </Link>
             </div>
             {/* right planet */}
@@ -142,7 +142,7 @@ function BottomNavBtn({ currPlanet }) {
                         style={{backgroundColor: rightPlanet.color}}
                         className='circle-btn'
                     >
-                        <i class="fa-solid fa-arrow-right-long"></i>
+                        <i className="fa-solid fa-arrow-right-long"></i>
                     </div>
                     </Link>
             </div>

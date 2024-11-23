@@ -46,7 +46,7 @@ export const geological = {
     magnet: {
         title: "Magnetic Field",
         icon: 'magnet',
-        paragraphs: "Despite assumptions that Mercury lacks a magnetic field due to its small size, it actually possesses one. This surprising fact suggests that some part of Mercury's core is, in fact, liquid."
+        paragraphs: "Despite assumptions that Mercury lacks a magnetic field due to its small size, it actually possesses one. This surprising fact suggests that some part of Mercury's core is, in fact, liquid (Franck et al)."
     },
 }
 

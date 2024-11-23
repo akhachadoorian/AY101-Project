@@ -1,0 +1,39 @@
+.jupiter {
+    strong, h2, h3 {
+        color: var(--jupiter);
+    }
+
+    .flex-box {
+        .io-content {
+            flex: 1 1 50%;
+            margin: auto;
+
+            h2 {
+                margin-bottom: 20px;
+            }
+        }
+
+        img {
+            width: 50%;
+            height: fit-content;
+        }
+
+        .icon-head {
+            padding-top: 60px;
+        }
+
+        h4, i {
+            color: var(--jupiterDark);
+        }
+    }
+
+    #europa {
+        p {
+            text-align: right;
+        }
+
+        .icon-head {
+            justify-content: flex-end;
+        }
+    }
+}

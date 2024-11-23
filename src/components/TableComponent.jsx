@@ -8,7 +8,7 @@ function TableComponents({ title, content, color }) {
         <div className="table">
             <h3>{title}</h3>
             {content.map((c, index) => (
-                <div className="element" style={{ borderColor: colorDark}}>
+                <div className="element" style={{ borderColor: colorDark}} key={index}>
                     <h4 dangerouslySetInnerHTML={{ __html: c.label }} key={index}></h4>
                     <h4 dangerouslySetInnerHTML={{ __html: c.info }} key={index}></h4>
                 </div>

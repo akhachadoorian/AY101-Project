@@ -1,0 +1,20 @@
+.saturn {
+    strong,h2, h3 {
+        color: var(--saturn);
+    }
+
+    #enceladus {
+        img {
+            width: 50%;
+            height: fit-content;
+        }
+
+        .icon-head {
+            padding-top: 60px;
+        }
+
+        h4, i {
+            color: var(--saturnMedium);
+        }
+    }
+}

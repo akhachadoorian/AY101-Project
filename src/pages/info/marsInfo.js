@@ -46,11 +46,11 @@ export const geological = {
         icon: 'house-crack',
         paragraphs: '<h6>Amount of Craters:</h6><p>Mercury &lt; Mars &lt; Earth = Venus</p><p>As you move left to right, the number of craters decreases and the radius of the planet increases.</p>'
     },
-    magnet: {
-        title: "Magnetic Field",
-        icon: 'magnet',
-        paragraphs: ""
-    },
+    // magnet: {
+    //     title: "Magnetic Field",
+    //     icon: 'magnet',
+    //     paragraphs: ""
+    // },
 }
 
 export const comp = {

@@ -163,8 +163,9 @@ section {
 
 footer {
     margin-top: 80px;
+    border-top: 2px solid #fff;
 
-    .footer {
+    .footer-content {
         display: flex;
         justify-content: space-between;
     
@@ -179,6 +180,10 @@ footer {
         margin: 0 20px;
     }
 }
+
+/* img {
+    max-width: 100%;
+} */
 
 .nav {
     display: flex;
@@ -442,6 +447,84 @@ DIFFERENTIATION
     }
 }
 
+/* 
+========================================
+TIDAL HEATING
+========================================
+*/
+.tidal-heating {
+    /* margin: 60px; */
+    padding-top: 40px;
+    transition: all 0.3s ease;
+
+    .th-inner {
+        padding: 40px;
+        border-radius: 30px;
+        border: 2px solid #fff;
+    }
+
+    .chevron {
+        transform: rotate(0deg);
+    }
+
+    .chevron.rotated {
+        transform: rotate(180deg);
+    }
+
+    .th-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        i {
+            transition: all ease-in-out 300ms;
+            color: #fff !important;
+            font-size: 40px ;
+        }
+
+        h3 {
+            margin-bottom: 0;
+        }
+    }
+    .th-content {
+        transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+        transition: all 0.3s ease;
+        padding-left: 30px;
+    }
+    .th-content.open {
+        
+    }
+    
+    .th-content.closed {
+        /* padding: 0; */
+    }
+}
+
+
+/* 
+========================================
+MOONS
+========================================
+*/
+.moons {
+    padding: 60px;
+
+    .moons-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 60px;
+
+        .glass-box {
+            flex: 1 1 40%;
+            height: fit-content;
+        }
+
+        .table {
+            padding: 0;
+        }
+    }
+}
 
 /* 
 ========================================
@@ -636,6 +719,74 @@ GLASS BOX
     gap: 15px;
 }
 
+.icon-head {
+    display: flex;
+    gap: 25px; 
+    align-items: center;
+
+
+    padding: 20px 0;
+    
+    i {
+        font-size: 30px;
+    }
+}
+
+/* 
+========================================
+INDEX
+========================================
+*/
+.flex-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+
+/* 
+========================================
+CITATIONS
+========================================
+*/
+.citations {
+    padding: 0 60px;
+
+    .text-citation, .photo-citation {
+        margin-bottom: 30px;
+      p {
+        text-indent: -36px;
+        word-break: break-all;
+      }  
+
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .return {
+        display: flex;
+        gap: 30px;
+
+        &:hover {
+            .circle-btn {
+                padding: 40px;
+            }
+        }
+
+        .circle-btn {
+            border-radius: 100%;
+            padding: 20px;
+            transition: all ease-in-out 300ms;
+            border: 2px solid;
+            background-color: var(--home);
+        }
+    }
+}
+
+#text-cites {
+    border-bottom: 2px solid white;
+}
 
 
 /* 
@@ -805,6 +956,7 @@ INDEX
         }
 
         h3, h4 {
+            color: #fff;
             text-align: center;
             margin-bottom: 10px;
             letter-spacing: 17.64px;
@@ -886,72 +1038,7 @@ INDEX
     }
 }
 
-div.frost-table {
-    margin: 0 60px;
-    /* border: 2px solid #fff;*/
-    
 
-    table.frost-table {
-        /* border-radius: 20px; */
-        overflow: hidden; 
-        width: 100%;
-        /* border-color: #fff;
-        border-style: solid;
-        border-bottom: 2px; */
-        border-collapse: collapse;
-        border: 2px solid rgba(83, 93, 116, 0.788);
-        border-spacing: 2px; 
-        thead {
-            /* background-color: black; */
-            /* border: 2px solid white; */
-            tr {
-                /* border-radius: 30px;*/
-                background: rgba(255, 255, 255, 0.06);
-                /* border: 1px solid rgba(83, 93, 116, 0.788); */
-                /* backdrop-filter: blur(4.199999809265137px);  */
-                
-                text-align: center;
-                text-transform: uppercase;
-                
-    
-                &.top {
-                    
-                    font-size: max(27px, 1.9vw);
-                    text-transform: uppercase;
-                    font-weight: 700;
-    
-                    > td {
-                        background-color: rgba(122, 137, 172, 0.3);
-                    }
-    
-                    
-                 }
-
-                td {
-                    padding: 0 15px;
-                    border: 1px solid rgba(83, 93, 116, 0.788);
-                    
-                }
-            }
-        }
-
-        tbody {
-
-            td {
-                padding: 0 15px;
-                border: 1px solid rgba(83, 93, 116, 0.788);
-                background-color: #0A0A0A;
-                text-align: center;
-
-                &.type {
-                    text-align: left;
-                    text-transform: uppercase;
-                }
-            }
-
-        }
-    }
-}
 
 .overview {
     margin: 60px;

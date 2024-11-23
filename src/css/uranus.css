@@ -1,0 +1,38 @@
+.uranus {
+    strong,h2, h3 {
+        color: var(--uranus);
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    .sunlight {
+        align-items: center;
+        .around {
+            flex: 1 1 60%;
+            width: 60%;
+
+            
+        }
+        & > .glass-box {
+            height: fit-content;
+        }
+
+    }
+
+    .flex-box2 {
+        display: flex;
+        /* flex-direction: column; */
+        align-items: center;
+        /* justify-content: space-around; */
+        gap: 20px;
+
+        flex: 1 1 50%;
+
+        img {
+            /* width: 75%; */
+        }
+    }
+
+}
