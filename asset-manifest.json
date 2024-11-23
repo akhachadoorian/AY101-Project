@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/AY101-Project/static/css/main.de630fb7.css",
-    "main.js": "/AY101-Project/static/js/main.2583a5c4.js",
+    "main.css": "/AY101-Project/static/css/main.2a88c9bd.css",
+    "main.js": "/AY101-Project/static/js/main.dfd59b73.js",
     "static/js/453.ed3810f9.chunk.js": "/AY101-Project/static/js/453.ed3810f9.chunk.js",
     "static/media/Earth.jpg": "/AY101-Project/static/media/Earth.b277553b7aae3d3042c1.jpg",
     "static/media/Titon.jpg": "/AY101-Project/static/media/Titon.cbce7006805d827858cf.jpg",
@@ -20,7 +20,7 @@
     "static/media/FrostTree2.png": "/AY101-Project/static/media/FrostTree2.2287412e3b93b5555b46.png",
     "static/media/Uranus.jpg": "/AY101-Project/static/media/Uranus.88eb911d7d882a21dab0.jpg",
     "static/media/Planets.svg": "/AY101-Project/static/media/Planets.df6bbd4cc25ff23100b9f541646fbddd.svg",
-    "static/media/Planets-V.svg": "/AY101-Project/static/media/Planets-V.b3efabe245bd73af2818a52e81f18a36.svg",
+    "static/media/Planets-V.svg": "/AY101-Project/static/media/Planets-V.664755ec3bcd3e6602fc09342f07fe69.svg",
     "static/media/Frostline.png": "/AY101-Project/static/media/Frostline.9292c9f9c1fe8ed4339f.png",
     "static/media/Neptune.jpg": "/AY101-Project/static/media/Neptune.e776704c9f89d15ce616.jpg",
     "static/media/JupiterStructure.svg": "/AY101-Project/static/media/JupiterStructure.fc06abe355f650b605a2ca092014408d.svg",
@@ -45,12 +45,12 @@
     "static/media/slick.ttf": "/AY101-Project/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/AY101-Project/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/AY101-Project/index.html",
-    "main.de630fb7.css.map": "/AY101-Project/static/css/main.de630fb7.css.map",
-    "main.2583a5c4.js.map": "/AY101-Project/static/js/main.2583a5c4.js.map",
+    "main.2a88c9bd.css.map": "/AY101-Project/static/css/main.2a88c9bd.css.map",
+    "main.dfd59b73.js.map": "/AY101-Project/static/js/main.dfd59b73.js.map",
     "453.ed3810f9.chunk.js.map": "/AY101-Project/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.de630fb7.css",
-    "static/js/main.2583a5c4.js"
+    "static/css/main.2a88c9bd.css",
+    "static/js/main.dfd59b73.js"
   ]
 }
