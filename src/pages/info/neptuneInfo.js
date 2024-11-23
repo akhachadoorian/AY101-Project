@@ -32,17 +32,6 @@ export const stats = {
 }
 
 export const geological = {
-    // volcano: {
-    //     title: 'Volcanoes',
-    //     icon: 'volcano',
-    //     paragraphs: ""
-
-    // },
-    // plateTec: {
-    //     title: "Plate Tectonics",
-    //     icon: 'house-crack',
-    //     paragraphs: ''
-    // },
     magnet: {
         title: "Magnetic Field",
         icon: 'magnet',
@@ -70,6 +59,5 @@ export const moons = {
     triton: {
         name: "Triton",
         p: "Triton, one of Neptune’s 16 moons, is the only moon in the galaxy that rotates in the opposite direction of the planet (<em>Neptune Facts</em>). Some scientists think that this odd rotation may be a result of the moon being an object created then captured by Neptune’s orbit (<em>Neptune Facts</em>).",
-        // geo: "",
     },
 }

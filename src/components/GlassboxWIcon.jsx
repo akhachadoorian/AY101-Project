@@ -2,10 +2,10 @@ import React from "react";
 
 function GlassboxWIcon({ title, icon, paragraph, color }) {
   var style = {
-    color: color ? color : "#7a89ac"
-  }
+    color: color ? color : "#7a89ac",
+  };
 
-  console.log(color)
+  console.log(color);
   return (
     <div className="glass-box">
       <div className="icon-w-head">

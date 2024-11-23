@@ -38,19 +38,15 @@ export const geological = {
     volcano: {
         title: 'Volcanoes',
         icon: 'volcano',
-        paragraphs: "<p>Mars only has a few active volcanoes due to the planet's  internals being significantly cooled compared to when it was first created.</p><p>Before such transformation, the planet had the largest active volcano in our solar system.</p>"
+        paragraphs: "<p>Mars only has a few active volcanoes due to the planet's internals being significantly cooled compared to when it was first created. The cooler of the planet's inner is a result of the planet being smaller than Earth and Venus.</p><p>Before such transformation, the planet had the largest active volcano in our solar system.</p>"
 
     },
     plateTec: {
         title: "Plate Tectonics",
         icon: 'house-crack',
-        paragraphs: '<p><strong>Amount of Craters:</strong> Mercury &lt; Mars &lt; Earth = Venus</p><p>As you move left to right, the number of craters decreases and the radius of the planet increases.</p>'
+        paragraphs: '<p><strong>Amount of Craters:</strong> Mercury &gt; Mars &gt; Earth = Venus</p><p>As you move left to right, the number of craters decreases and the radius of the planet increases.</p><p>Since Mars has more craters than Earth and Venus yet less than Mercury, demonstrating that the planet had plate tectonics at one point in it</p>'
     },
-    // magnet: {
-    //     title: "Magnetic Field",
-    //     icon: 'magnet',
-    //     paragraphs: ""
-    // },
+
 }
 
 export const comp = {

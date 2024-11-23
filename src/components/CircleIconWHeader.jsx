@@ -1,24 +1,19 @@
-import React from 'react';
+import React from "react";
 
-function CircleIconWHeader({ color, borderColor = "#fff", icon, title  }) {
-var style = {
-  backgroundColor: color,
-  // border: `2px solid ${borderColor}`
-}
+function CircleIconWHeader({ color, borderColor = "#fff", icon, title }) {
+  var style = {
+    backgroundColor: color,
+  };
 
   return (
-    <div className='circle-icon-w-header'>
-      <div style={style} className='circle'>
-        {/* <i className={`fa-solid fa-${icon}`}></i> */}
-        <h3 className='number'>{icon}</h3>
+    <div className="circle-icon-w-header">
+      <div style={style} className="circle">
+        <h3 className="number">{icon}</h3>
       </div>
-      
-      <h4>{title}</h4>
 
+      <h4>{title}</h4>
     </div>
   );
-
-  
 }
 
 export default CircleIconWHeader;

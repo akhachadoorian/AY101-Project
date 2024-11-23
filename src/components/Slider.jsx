@@ -14,71 +14,88 @@ import saturnImg from "../images/Saturn.jpg";
 import uranusImg from "../images/Uranus.jpg";
 import neptuneImg from "../images/Neptune.jpg";
 
+import mercuryIcon from "../images/MercuryIcon.svg";
+import venusIcon from "../images/VenusIcon.svg";
+import earthIcon from "../images/EarthIcon.svg";
+import marsIcon from "../images/MarsIcon.svg";
+import jupiterIcon from "../images/JupiterIcon.svg";
+import saturnIcon from "../images/SaturnIcon.svg";
+import uranusIcon from "../images/UranusIcon.svg";
+import neptuneIcon from "../images/NeptuneIcon.svg";
+
 function SliderWithLinks() {
   const slides = [
     {
-      img: mercuryImage,
+      img: mercuryIcon,
       link: "/mercury",
       color: "var(--mercury)",
       title: "Mercury",
       type: "Terrestrial",
-      summary: "Mercury's gray and cratered appearance makes it look similar to the Moon. Its small size caused its internals to cool quickly, preventing any geological activity.",
+      summary:
+        "Mercury's gray and cratered appearance makes it look similar to the Moon. Its small size caused its internals to cool quickly, preventing any geological activity.",
     },
     {
-      img: venusImg,
+      img: venusIcon,
       link: "/venus",
       color: "var(--venus)",
       title: "Venus",
       type: "Terrestrial",
-      summary: "The significant greenhouse effect on Venus has resulted in a super high surface temperature, a thick CO<sub>2</sub> atmosphere, and sulfuric rain.",
+      summary:
+        "The significant greenhouse effect on Venus has resulted in a super high surface temperature, a thick CO<sub>2</sub> atmosphere, and sulfuric rain.",
     },
     {
-      img: earthImg,
+      img: earthIcon,
       link: "/earth",
       color: "var(--earth)",
       title: "Earth",
       type: "Terrestrial",
-      summary: "Earth's stark difference from other planets is that it is covered in liquid water, due to its geological activity and atmosphere, and its ability to sustain life.",
+      summary:
+        "Earth's stark difference from other planets is that it is covered in liquid water, due to its geological activity and atmosphere, and its ability to sustain life.",
     },
     {
-      img: marsPhoto,
+      img: marsIcon,
       link: "/mars",
       color: "var(--mars)",
       title: "Mars",
       type: "Terrestrial",
-      summary: 'Mars appears bright red due to its iron oxide content. As its internal structure solidified, Mars lost its atmosphere and magnetic field, and its volcanoes became inactive.',
+      summary:
+        "Mars appears bright red due to its iron oxide content. As its internal structure solidified, Mars lost its atmosphere and magnetic field, and its volcanoes became inactive.",
     },
     {
-      img: jupiterImg,
+      img: jupiterIcon,
       link: "/jupiter",
       color: "var(--jupiter)",
       title: "Jupiter",
       type: "Jovian",
-      summary: "Jupiter is the largest planet, four times Earth's size, and its famous red spot is the Jovian version of a hurricane.",
+      summary:
+        "Jupiter is the largest planet, four times Earth's size, and its famous red spot is the Jovian version of a hurricane.",
     },
     {
-      img: saturnImg,
+      img: saturnIcon,
       link: "/saturn",
       color: "var(--saturn)",
       title: "Saturn",
       type: "Jovian",
-      summary: "Saturn, known for its stunning rings, has the largest number of moons and a hex-shaped storm at its north pole.",
+      summary:
+        "Saturn, known for its stunning rings, has the largest number of moons and a hex-shaped storm at its north pole.",
     },
     {
-      img: uranusImg,
+      img: uranusIcon,
       link: "/uranus",
       color: "var(--uranus)",
       title: "Uranus",
       type: "Neptunian",
-      summary: "Uranus oddly orbits on its side, Uranus has a unique orbit as it rotates on its side, and its rings and moons also follow this unusual alignment.with its rings and moons following suit.",
+      summary:
+        "Uranus oddly orbits on its side, Uranus has a unique orbit as it rotates on its side, and its rings and moons also follow this unusual alignment.with its rings and moons following suit.",
     },
     {
-      img: neptuneImg,
+      img: neptuneIcon,
       link: "/neptune",
       color: "var(--neptune)",
       title: "Neptune",
       type: "Neptunian",
-      summary: "Neptune's atmosphere is transparent, allowing it to appear less hazy than Uranus, and its blue color results from a similar process that causes the blue of Earth's atmosphere."
+      summary:
+        "Neptune's atmosphere is transparent, allowing it to appear less hazy than Uranus, and its blue color results from a similar process that causes the blue of Earth's atmosphere.",
     },
   ];
 
@@ -117,10 +134,10 @@ function SliderWithLinks() {
                   <h6 style={{ color: slide.color }}>{slide.type}</h6>
                 </div>
                 <p dangerouslySetInnerHTML={{ __html: slide.summary }}></p>
-                <Link 
-                  to={slide.link} 
+                <Link
+                  to={slide.link}
                   className="slider-link"
-                  style={{backgroundColor: slide.color, borderColor: '#fff'}}
+                  style={{ backgroundColor: slide.color, borderColor: "#fff" }}
                 >
                   Learn more
                   <i className="fa-solid fa-circle-right"></i>

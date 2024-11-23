@@ -1,22 +1,28 @@
 import React from 'react';
 import "../css/venus.css"
 import * as VenusInfo from './info/venusInfo.js'
-import PlanetHeader from '../components/PlanetHeader.jsx';
 
+// IMAGES
 import venusImg from '../images/Venus.jpg'
 import venusStructure from '../images/VenusStructure.svg'
 import greenhouseGraphic from '../images/Greenhouse Gases.svg'
 
+// COMPONENTS
 import CompStructSize from '../components/CompStructSize.jsx';
 import GeologicalActivity from '../components/GeologicalActivity.jsx';
 import Differentiation from '../components/Differentation.jsx';
 import BottomNavBtn from '../components/BottomNavBtn.jsx';
+import ReturnHomeBtn from '../components/ReturnHomeBtn.jsx';
+import PlanetHeader from '../components/PlanetHeader.jsx';
+
 
 function Venus() {
     var planetColor = "var(--venus)";
 
     return (
         <div className='venus'>
+            <ReturnHomeBtn />
+
             <PlanetHeader 
                 planetName={"Venus"}
                 typeOfPlanet={"Terrestrial"}
@@ -25,7 +31,6 @@ function Venus() {
             />
 
             <CompStructSize 
-                // composition={Object.values(VenusInfo.comp)}
                 size={Object.values(VenusInfo.size)}
                 surface={Object.values(VenusInfo.surface)}
                 structure={Object.values(VenusInfo.structure)}
@@ -61,7 +66,6 @@ function Venus() {
 
             <GeologicalActivity 
                 geological={Object.values(VenusInfo.geological)}
-                // summaryText={""}
                 color={planetColor}
             />
 

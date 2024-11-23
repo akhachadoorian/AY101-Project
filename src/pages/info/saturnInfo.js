@@ -32,17 +32,6 @@ export const stats = {
 }
 
 export const geological = {
-    // volcano: {
-    //     title: 'Volcanoes',
-    //     icon: 'volcano',
-    //     paragraphs: ""
-
-    // },
-    // plateTec: {
-    //     title: "Plate Tectonics",
-    //     icon: 'house-crack',
-    //     paragraphs: ''
-    // },
     magnet: {
         title: "Magnetic Field",
         icon: 'magnet',

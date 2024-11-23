@@ -41,17 +41,8 @@ export const geological = {
     plateTec: {
         title: "Plate Tectonics",
         icon: 'house-crack',
-        paragraphs: 'The lack of craters visible on the planet’s surface demonstrates that Venus has plate tectonics. '
+        paragraphs: "The lack of craters visible on the planet’s surface demonstrates that Venus has plate tectonics. The plate tectonics result from the planet's molten interior, which is, in turn, a result of Venus' size. "
     },
-    // magnet: {
-    //     title: "Magnetic Field",
-    //     icon: 'magnet',
-    //     paragraphs: ""
-    // },
-}
-
-export const comp = {
-    p1: "",
 }
 
 export const size = {
@@ -59,7 +50,7 @@ export const size = {
 }
 
 export const structure = {
-    p: "Venus has a thick carbon dioxide CO<sub>2</sub> atmosphere, with a little bit of nitrogen gas N<sub>2</sub>. This atmosphere composition results in sulfuric rain to occur on the planet. The sources of these gases are the planet's active volcanoes."
+    p: "Venus has a thick carbon dioxide CO<sub>2</sub> atmosphere, with a little bit of nitrogen gas N<sub>2</sub>. This atmosphere composition results in sulfuric rain to occur on the planet. The sources of these gases are the planet's active volcanoes. "
 }
 
 export const surface = {

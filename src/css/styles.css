@@ -67,6 +67,12 @@ h1 {
 
     text-align: center;
     margin: 0 0 60px 0;
+
+    @media all and (max-width: 800px) {
+        font-size: 36px;
+        letter-spacing: 25px;
+        margin: 30px 10px;
+    }
 }
 
 h2 {
@@ -82,6 +88,11 @@ h2 {
 
     text-align: center;
     margin: 0 0 60px 0;
+
+    @media all and (max-width: 800px) {
+        font-size: 26px;
+        letter-spacing: 10px;
+    }
 }
 
 h3 {
@@ -97,6 +108,11 @@ h3 {
 
     /* text-align: center; */
     margin: 0 0 60px 0;
+
+    @media all and (max-width: 800px) {
+        font-size: 20px;
+        letter-spacing: 6.5px;
+    }
 }
 
 h4 {
@@ -129,6 +145,10 @@ h6 {
     text-transform: uppercase;
 
     margin: 0 0 5px 0;
+
+    @media all and (max-width: 800px) {
+        font-size: 18px;
+    }
 }
 
 p, li, a {
@@ -138,6 +158,10 @@ p, li, a {
     text-decoration: none;
 
     margin: 0 0 5px 0;
+
+    @media all and (max-width: 800px) {
+        font-size: 16px;
+    }
 }
 
 table {
@@ -163,7 +187,7 @@ section {
 
 footer {
     margin-top: 80px;
-    border-top: 2px solid #fff;
+    /* border-top: 2px solid #fff; */
 
     .footer-content {
         display: flex;
@@ -178,6 +202,10 @@ footer {
         height: 2px;
         background-color: white;
         margin: 0 20px;
+    }
+
+    img {
+        max-width: 100%;
     }
 }
 
@@ -222,8 +250,12 @@ SLIDER
 */
 
 .planets-slider {
-    padding: 200px 60px;
+    padding: 100px 60px;
     height: 100vh;
+
+    @media all and (max-width: 800px) {
+        padding: 30px 20px;
+    }
 }
 .slick-slide, .slide-track {
     height: 100% !important;
@@ -249,15 +281,15 @@ SLIDER
     padding: 0 60px;
     height: 100% ;
 
+    @media all and (max-width: 800px) {
+        padding: 0;
+    }
+
      h3 {
         color: #fff;
         margin-bottom: 0;
      }
 
-     img {
-        width: 300px;
-        height: 300px;
-     }
 
      & > .glass-box {
         height: 100% ;
@@ -269,19 +301,25 @@ SLIDER
         align-items: center;
         flex-wrap: wrap;
 
+        @media all and (max-width: 800px) {
+            padding: 20px;
+        }
+
         .img-holder-slider {
             width: 230px;
             height: 230px;
-            /* flex: 1 0 300px;
-            height: 100%; */
+            
+            @media all and (max-width: 800px) {
+                width: 100px;
+            }
 
-            background-size: 300px;
+            background-size: contain;
             background-position: center;
             background-repeat: no-repeat;
-            background-color: black;
+            /* background-color: black; */
 
             margin: 0;
-            border-radius: 100%;
+            /* border-radius: 100%; */
             flex-shrink: 0;
         }
 
@@ -840,6 +878,14 @@ INDEX
 .index {
     overflow: hidden;
 
+    #planets-array {
+        padding: 100px 0;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
     h2 {
         color:#7a89ac;
     }
@@ -878,12 +924,20 @@ INDEX
     }
 
     .formation-solar-system {
-        padding: 200px 60px;
+        padding: 100px 60px;
+
+        @media all and (max-width: 800px) {
+            padding: 50px 20px;
+        }
 
         .formation {
             display: flex;
             justify-content: space-between;
             gap: 60px;
+
+            @media all and (max-width: 800px) {
+                flex-direction: column;
+            }
         
             .glass-box {
                 flex: 0 1 30%;
@@ -898,12 +952,20 @@ INDEX
                 display: flex;
                 align-items: center;
                 font-size: 4vw;
+
+                @media all and (max-width: 800px) {
+                    font-size: 30px;
+                }
             }
         }
     }
 
     .planet-components {
-        padding: 200px 60px;
+        padding: 100px 60px;
+        
+        @media all and (max-width: 800px) {
+            padding: 50px 20px;
+        }
 
         .planet-comp {
             display: flex;
@@ -924,7 +986,11 @@ INDEX
     }
 
     .protoplanet-formation {
-        padding: 200px 0px;
+        padding: 100px 0px;
+
+        @media all and (max-width: 800px) {
+            padding: 50px 20px;
+        }
 
         .proto-planet {
             display: flex;
@@ -1018,9 +1084,15 @@ INDEX
     display: flex;
     align-items: center;
     gap: 60px;
+
+    @media all and (max-width: 800px) {
+        flex-direction: column;
+        padding: 20px 0;
+    }
     
     .text {
         flex: 0 1 60%;
+
         p {
             margin-bottom: 10px;
         }
@@ -1033,12 +1105,15 @@ INDEX
 }
 
 .mult-important-info {
-    /* margin: 0 0 20px 0; */
     flex: 0 1 40%;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
+
     gap: 60px;
+
+    @media all and (max-width: 800px) {
+
+    }
     
 }
 
@@ -1059,12 +1134,16 @@ INDEX
 .frost {
     margin: 60px;
 
-    /* display: flex;
-    flex-direction: row;
-    gap: 60px; */
+    @media all and (max-width: 800px) {
+        margin: 20px;
+    }
 
     .inside-frost, .outside-frost {
         padding: 100px 0px;
+
+        @media all and (max-width: 800px) {
+            padding: 20px 0;
+        }
     }
 
     /* .inside {
@@ -1073,10 +1152,13 @@ INDEX
 
     .outside, .inside {
         display: flex;
-        /* justify-content: center; */
         align-items: center;
         gap: 60px;
 
+        @media all and (max-width: 800px) {
+            flex-direction: column;
+            gap: 30px;
+        }
         
     }
 }
@@ -1093,7 +1175,9 @@ INDEX
 
     img {
         max-width: 100%;
-        /* max-height: 500px; */
+    }
+    @media all and (max-width: 800px) {
+        padding: 50px 20px;
     }
 }
 
@@ -1141,10 +1225,10 @@ INDEX
 
     & > .glass-box {
         margin-bottom: 20px;
-        /* padding: 40px 20px; */
-        /* text-align: center; */
+    }
 
-
+    @media all and (max-width: 800px) {
+        max-width: 70%;
     }
 }
 

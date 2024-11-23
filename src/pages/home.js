@@ -1,36 +1,55 @@
-import React from "react";
-// <!-- https://images.nasa.gov/details/GSFC_20171208_Archive_e001738 -->
+import React, { useState, useEffect } from 'react';
+
 import * as HomepageInfo from "./info/homepageInfo.js";
+
+// IMAGES
+import planets from "../images/Planets.svg";
+import mobilePlanets from "../images/Planets-V.svg"
+import frostLineGraphic from "../images/Frostline.png";
+import frostTreeGraphic from "../images/FrostTree2.png";
+
+// COMPONENTS
 import PlanetComponent from "../components/PlanetComponent.jsx";
 import GlassboxWIcon from "../components/GlassboxWIcon.jsx";
 import TextWithImage from "../components/TextWithImage.jsx";
 import ImportantInfo from "../components/ImportantInfo.jsx";
-
-import frostLineGraphic from "../images/Frostline.png";
-import frostTreeGraphic from "../images/FrostTree2.png";
 import CircleIconWHeader from "../components/CircleIconWHeader.jsx";
 import GlassboxStats from "../components/GlassboxStats.jsx";
 import SliderWithLinks from "../components/Slider.jsx";
 
 function Home() {
+  const [imageSrc, setImageSrc] = useState(planets);
+
+  useEffect(() => {
+    const updateImage = () => {
+      if (window.innerWidth <= 768) {
+        setImageSrc(mobilePlanets);
+      } else {
+        setImageSrc(planets);
+      }
+    };
+
+    updateImage(); // Set the image on initial load
+    window.addEventListener('resize', updateImage);
+
+    return () => window.removeEventListener('resize', updateImage);
+  }, []);
   return (
     <div className="index">
       <div className="galaxy-header">
         <div className="galaxy">
           <h1>Solar System</h1>
           <div className="stats">
-            {/* {Object.values(HomepageInfo.milkyWayStats).map((component, index) => (
-                <GlassboxStats 
-                    key={index}
-                    title={component.paragraph}
-                />
-            ))} */}
             <GlassboxStats
               title={"Contains"}
               paragraphs={HomepageInfo.milkyWayStats}
             />
           </div>
         </div>
+      </div>
+
+      <div id="planets-array">
+        <img src={imageSrc} />
       </div>
 
       <div className="planets-slider">
@@ -69,21 +88,6 @@ function Home() {
               />
             ))}
         </div>
-
-        {/* <div className="planet-comp">
-          {Object.values(HomepageInfo.planetComponents)
-            .slice(2, 4) // Limit to the first 2 items
-            .map((component, index) => (
-              <PlanetComponent
-                key={index}
-                title={component.title}
-                paragraph={component.paragraph}
-                relativeAbundance={component.relativeAbundance}
-                icon={component.icon}
-                examples={component.examples}
-              />
-            ))}
-          </div> */}
       </div>
 
       <div className="protoplanet-formation">
@@ -99,7 +103,7 @@ function Home() {
         </div>
 
         <div className="frost">
-          <div  className="inside-frost">
+          <div className="inside-frost">
             <h3>Inside the frost line</h3>
             <div className="inside">
               <div className="mult-important-info">
@@ -117,7 +121,7 @@ function Home() {
               </p>
             </div>
           </div>
-          
+
           <div className="outside-frost">
             <h3>Outside the frost line</h3>
             <div className="outside">
@@ -136,48 +140,6 @@ function Home() {
               </p>
             </div>
           </div>
-        </div>
-
-        <div className="frost-table">
-          {/* <div className='f-table'>
-                <div></div>
-            </div> */}
-
-          {/* <table className="frost-table">
-                <thead>
-                    <tr className='top'>
-                        <td></td>
-                        <td>Inside Frost Line</td>
-                        <td colSpan={2}>Outside Frost Line</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>Terrestrial Planets</td>
-                        <td>Neptunian Planets</td>
-                        <td>Jovian Planets</td>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td className='type'>Composition</td>
-                        <td>Rock & Metal</td>
-                        <td>Hydrogen compounds around a rock and metal core.</td>
-                        <td>Hydrogen and helium cournd a hydrogen compound, rock, and metal core.</td>
-                    </tr>
-                    <tr>
-                        <td className='type'>Core Size</td>
-                        <td>&lt; 2 Earth Masses</td>
-                        <td>&gt; 2 Earth Masses</td>
-                        <td>&gt; 2 Earth Masses</td>
-                    </tr>
-                    <tr>
-                        <td className='type'>Envelope Size</td>
-                        <td>-</td>
-                        <td>&lt; 100 Earth Masses</td>
-                        <td>&gt; 100 Earth Masses</td>
-                    </tr>
-                </tbody>
-            </table> */}
         </div>
       </div>
 
