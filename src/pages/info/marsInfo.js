@@ -44,7 +44,7 @@ export const geological = {
     plateTec: {
         title: "Plate Tectonics",
         icon: 'house-crack',
-        paragraphs: '<h6>Amount of Craters:</h6><p>Mercury &lt; Mars &lt; Earth = Venus</p><p>As you move left to right, the number of craters decreases and the radius of the planet increases.</p>'
+        paragraphs: '<p><strong>Amount of Craters:</strong> Mercury &lt; Mars &lt; Earth = Venus</p><p>As you move left to right, the number of craters decreases and the radius of the planet increases.</p>'
     },
     // magnet: {
     //     title: "Magnetic Field",
@@ -56,7 +56,7 @@ export const geological = {
 export const comp = {
     p1: "Mars is red due to iron oxides (rust).",
     p2: "Its volcanoes have died, leaving it with a very thin CO<sub>2</sub> atmosphere.",
-    p3: "Water is located on the planet as polar ice caps. At one point in Mar's history, liquid water was demonstrated by the many geological features on its surface caused by liquid water erosion."
+    p3: "Water is located on the planet as polar ice caps. At one point in Mar's history, liquid water was demonstrated by the many geological features on its surface caused by liquid water erosion (Franck et al)."
 }
 
 export const size = {

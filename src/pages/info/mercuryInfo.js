@@ -35,7 +35,7 @@ export const geological = {
     volcano: {
         title: 'Volcanoes',
         icon: 'volcano',
-        paragraphs: "Mercury has no volcanic activity because its interior has cooled. Consequently, the planet lacks an atmosphere."
+        paragraphs: "Mercury has no volcanic activity because its interior has cooled. Consequently, the planet lacks an atmosphere (<em>Mercury</em>)."
 
     },
     plateTec: {
@@ -55,11 +55,11 @@ export const structure = {
 }
 
 export const comp = {
-    p1: "Mercury’s core constitutes a significant 60% of the planet's total mass. This dense core is predominantly made up of iron and nickel. The outer layers of the planet are composed of silicates.",
+    p1: "Mercury’s core constitutes a significant 60% of the planet's total mass (Franck et al). This dense core is predominantly made up of iron and nickel (Franck et al). The outer layers of the planet are composed of silicates.",
 }
 
 export const surface = {
-    p1: "Mercury's gray surface is covered in craters and basins and resembles the Moon. Surprisingly, water ice has been detected in craters near the planet's poles. An important feature on Mercury's surface is called <strong>scraps</strong>, which are cliffs theorized to have formed when the planet's surface wrinkled as the interior layers cooled. ",
+    p1: "Mercury's gray surface is covered in craters and resembles the Moon. Surprisingly, water ice has been detected in craters near the planet's poles (Franck et al). An important feature on Mercury's surface is called <strong>scraps</strong> which are cliffs theorized to have formed when the planet's surface wrinkled as the interior layers cooled (Franck et al). ",
 }
 
 export const size = {

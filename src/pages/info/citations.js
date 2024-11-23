@@ -19,8 +19,20 @@ export const textCitations2 = [
         url: "https://lasp.colorado.edu/outerplanets/giantplanets_magnetospheres.php#:~:text=Jupiter’s%20Magnetosphere,-A%20drawing%20of&text=The%20stronger%20the%20magnetic%20field,kilometers%20before%20it%20reaches%20Jupiter.https://science.nasa.gov/resource/global-image-of-io-true-color/ ",
     },
     {
+        citation: "High Resolution Global View of Io. NASA, JPL, University of Arizona, Dec. 19, 1997.",
+        url: "https://science.nasa.gov/resource/high-resolution-global-view-of-io/",
+    },
+    {
         citation: "Mercury. NASA.",
         url: "https://science.nasa.gov/mercury/",
+    },
+    {
+        citation: "Neptune Facts. NASA.",
+        url: " https://science.nasa.gov/neptune/neptune-facts/",
+    },
+    {
+        citation: "Uranus Facts. NASA.",
+        url: "https://science.nasa.gov/uranus/facts/",
     },
 ];
 
@@ -38,6 +50,7 @@ export const imgCitations = [
     "Uranus as Seen by NASA Voyager 2. NASA, JPL-Caltech, Dec. 18, 1986. https://images.nasa.gov/details/PIA18182",
     "Venus - Computer Simulated Global View of the Northern Hemisphere. NASA, JPL, July 18, 1996. https://images.nasa.gov/details/PIA00271",
 ];
+
 
 export const imgCitations2 = [
     {
@@ -61,6 +74,10 @@ export const imgCitations2 = [
         url: "https://science.nasa.gov/resource/high-resolution-global-view-of-io/",
     },
     {
+        citation: "Global Color Mosaic of Triton. NASA, JPL, July 04, 1998." ,
+        url: " https://images.nasa.gov/details/PIA00317",
+    },
+    {
         citation: "Jupiter Marble. NASA, JPL, Mar. 21, 2019.",
         url: "https://images.nasa.gov/details/PIA22946",
     },
@@ -81,11 +98,16 @@ export const imgCitations2 = [
         url: "https://images.nasa.gov/details/PIA00046",
     },
     {
-        citation: "Uranus as Seen by NASA Voyager 2. NASA, JPL-Caltech, Dec. 18, 1986.",
+        citation: "Uranus as Seen by NASA Voyager 2.NASA, JPL-Caltech, Dec. 18, 1986. ",
         url: "https://images.nasa.gov/details/PIA18182",
+    },
+    {
+        citation: "Uranus (NIRCam Image). WEBB Space Telescope, April 6, 2023.",
+        url: "https://webbtelescope.org/contents/media/images/2023/117/01GWQD6PSGTBK7VQBZST09YYKW",
     },
     {
         citation: "Venus - Computer Simulated Global View of the Northern Hemisphere. NASA, JPL, July 18, 1996." ,
         url: "https://images.nasa.gov/details/PIA00271",
     },
 ];
+

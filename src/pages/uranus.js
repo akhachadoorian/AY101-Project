@@ -5,7 +5,8 @@ import PlanetHeader from '../components/PlanetHeader.jsx';
 import uranusImg from '../images/Uranus.jpg'
 import uranusStruct from '../images/UranusStructure.svg'
 import aroundSun from '../images/UranusAroundSun.svg'
-import uranusGraph from '../images/UranusGraph.svg'
+// import uranusGraph from '../images/UranusGraph.svg'
+import uranusRings from '../images/UranusRings.png'
 import CompStructSize from '../components/CompStructSize.jsx';
 import GeologicalActivity from '../components/GeologicalActivity.jsx';
 import BottomNavBtn from '../components/BottomNavBtn.jsx';
@@ -13,6 +14,12 @@ import Moons from '../components/Moons.jsx';
 
 function Uranus() {
     var planetColor = "var(--uranus)";
+    var s = {
+        backgroundImage: `url(${uranusRings})`,
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center'
+    }
 
     return (
         <div className='uranus'>
@@ -24,9 +31,9 @@ function Uranus() {
             />
 
             <CompStructSize 
-                // composition={Object.values(UranusInfo.comp)}
+                composition={Object.values(UranusInfo.comp)}
                 size={Object.values(UranusInfo.size)}
-                // structure={Object.values(UranusInfo.structure)}
+                structure={Object.values(UranusInfo.structure)}
                 surface={Object.values(UranusInfo.surface)}
                 structureImg={uranusStruct}
                 planetType={'neptunian'}
@@ -50,6 +57,15 @@ function Uranus() {
                         <p dangerouslySetInnerHTML={{ __html: UranusInfo.rotation.p2 }}></p>
                     </div>
                 </div>
+            </section>
+
+            <section className='flex-box' id='rings'>
+                <div className='glass-box'>
+                    <h2>Rings</h2>
+                    <p dangerouslySetInnerHTML={{ __html: UranusInfo.rings.p1 }}></p>
+                </div>
+                <div className="img-hold-ring" style={s}></div>
+                {/* <img src={uranusRings} alt='Image of uranus' /> */}
             </section>
 
             <Moons 

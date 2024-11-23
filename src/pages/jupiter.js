@@ -55,7 +55,7 @@ function Jupiter() {
                         <i className="fa-solid fa-house-crack"></i>
                         <h4>Geological Activity</h4>
                     </div>
-                    <p>{JupiterInfo.moons.io.geo}</p>
+                    <p dangerouslySetInnerHTML={{ __html: JupiterInfo.moons.io.geo }}></p>
                     <TidalHeading 
                         color={"var(--jupiterDark"}
                     />
@@ -73,7 +73,7 @@ function Jupiter() {
                         <i className="fa-solid fa-house-crack"></i>
                         <h4>Geological Activity</h4>
                     </div>
-                    <p>{JupiterInfo.moons.europa.geo}</p>
+                    <p dangerouslySetInnerHTML={{ __html: JupiterInfo.moons.europa.geo }}></p>
                     <TidalHeading 
                         color={"var(--jupiterDark"}
                     />

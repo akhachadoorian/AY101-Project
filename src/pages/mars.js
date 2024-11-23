@@ -12,12 +12,15 @@ import CompStructSize from '../components/CompStructSize.jsx';
 import GeologicalActivity from '../components/GeologicalActivity.jsx';
 import BottomNavBtn from '../components/BottomNavBtn.jsx';
 import Differentiation from '../components/Differentation.jsx';
+import ReturnHomeBtn from '../components/ReturnHomeBtn.jsx';
 
 function Mars() {
     var planetColor = "var(--mars)";
 
     return (
         <div className="mars">
+            <ReturnHomeBtn />
+            
             <PlanetHeader 
                 planetName={"Mars"}
                 typeOfPlanet={"Terrestrial"}

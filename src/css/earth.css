@@ -15,4 +15,22 @@
             max-width: 100%;
         }
     }
+
+    .icon-head {
+        /* align-items: center; */
+        justify-content: center;
+
+        i {
+            color: var(--earthDark);
+            font-size: max(60px, 4.5vw);
+        }
+
+        h2 {
+            margin-bottom: 0;
+        }
+    }
+
+    #life {
+        margin: 0 60px 60px 60px;
+    }
 }

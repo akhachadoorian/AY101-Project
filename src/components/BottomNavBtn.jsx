@@ -123,14 +123,14 @@ function BottomNavBtn({ currPlanet }) {
                 </Link>
             </div>
             {/* return to home page */}
-            <div className=''>
+            {/* <div className=''>
                 <Link 
                     to={"/"}
                     className='glass-box'
                 >
                     <i className="fa-solid fa-house"></i>
                 </Link>
-            </div>
+            </div> */}
             {/* right planet */}
             <div className='right-planet'>
                 <Link 

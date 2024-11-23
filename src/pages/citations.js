@@ -2,6 +2,7 @@ import React from 'react';
 
 import * as Cites from './info/citations'
 import { Link } from 'react-router-dom';
+import ReturnHomeBtn from '../components/ReturnHomeBtn';
 
 function Citations() {
     var spanStyle = {
@@ -13,15 +14,6 @@ function Citations() {
     return (
         <div className='citations'>
             <h1>Citations</h1>
-
-            {/* <section id='text-cites'>
-                <h2>Text Citations</h2>
-                {Cites.textCitations.map((c, index) =>(
-                    <div className="text-citation" key={index}>
-                        <p>{c}</p>
-                    </div>
-                ))}
-            </section> */}
 
             <section id='text-cites'>
                 <h2>Text Citations</h2>
@@ -39,14 +31,6 @@ function Citations() {
                 ))}
             </section>
 
-            {/* <section>
-                <h2>Photo Citations</h2>
-                {Cites.imgCitations.map((c, index) =>(
-                    <div className="photo-citation" key={index}>
-                        <p>{c}</p>
-                    </div>
-                ))}
-            </section> */}
 
             <section>
                 <h2>Photo Citations</h2>
@@ -64,21 +48,7 @@ function Citations() {
                 ))}
             </section>
 
-                <Link 
-                    to={"/"}
-                    // style={linkStyle}
-                    className='return'
-                >
-                    <div
-                        // style={{backgroundColor: "#fff"}}
-                        className='circle-btn'
-                        // style={btnStyle}
-                    >
-                        <i className="fa-solid fa-arrow-left-long"></i>
-                        
-                    </div>
-                    <span style={spanStyle}>Return to Home Page</span>
-                </Link>
+           <ReturnHomeBtn />
 
         </div>
     )

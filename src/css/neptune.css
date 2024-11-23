@@ -2,4 +2,36 @@
     strong,h2, h3 {
         color: var(--neptune);
     }
+
+    #triton {
+        img {
+            width: 50%;
+            height: fit-content;
+        }
+
+        .icon-head {
+            padding-top: 60px;
+        }
+
+        h4, i {
+            color: var(--neptuneMedium);
+        }
+    }
+
+    .icon-head {
+        justify-content: center;
+
+        i {
+            color: var(--neptuneDark);
+            font-size: max(60px, 4.5vw);
+        }
+
+        h2 {
+            margin-bottom: 0;
+        }
+    }
+
+    #winds {
+        margin: 0 60px 60px 60px;
+    }
 }

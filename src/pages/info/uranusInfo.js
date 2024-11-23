@@ -46,12 +46,12 @@ export const geological = {
     magnet: {
         title: "Magnetic Field",
         icon: 'magnet',
-        paragraphs: "Uranus has a weak magnetic field. The source of the planet's magnetic field is believed to be a result of the planet's core [1]."
+        paragraphs: "Uranus has a weak magnetic field and magnetosphere. The source of the planet's magnetic field is believed to be a result of the planet's core (<em>Giant Planets Magnetospheres</em>). Uranus' weak magnetic field is irregulary shaped due to the misalignment of the axis for planet rotation and the magnetic field(<em>Uranus Facts</em>)."
     },
 }
 
 export const comp = {
-    p1: "Since Uranus’s upper atmosphere is composed of methane, the planet appears featureless at certain range of light wavelengths [Textbook].",
+    p1: "Since Uranus’s upper atmosphere is composed of methane, the planet appears featureless at certain range of light wavelengths (Franck et al).",
 }
 
 export const size = {
@@ -59,7 +59,7 @@ export const size = {
 }
 
 export const structure = {
-    p: ""
+    p: "Uranus has the second lowest density of the planets in the solar system, followed by Saturn (<em>Uranus Facts</em>). Although Uranus is slightly larger in diameter than Neptune, Neptune has a greater mass (<em>Uranus Facts</em>)."
 }
 
 export const surface = {
@@ -67,6 +67,10 @@ export const surface = {
 }
 
 export const rotation = {
-    p1: "Throughout the solar system, all the planets rotate horizontally around a vertical axis with a slight degree of tilt depending on the planet. Uranus is unique because its axis is tilted by 98 degrees [Textbook]. As a result of this significant tilt, Uranus and its rings and moons rotate vertically around a horizontal axis, or in simpler terms, on its side. The exact reason for Uranus’ unique rotation is unknown.",
-    p2: "Uranus’ rotation results in an unusual pattern of light and dark throughout the planet. The planet’s north pole would face 42-years of light then 42-years of darkness while the south pole faces the opposite cycle [Textbook]. "
+    p1: "Throughout the solar system, all the planets rotate horizontally around a vertical axis with a slight degree of tilt depending on the planet. Uranus is unique because its axis is tilted by 98 degrees (Franck et al). As a result of this significant tilt, Uranus and its rings and moons rotate vertically around a horizontal axis, or in simpler terms, on its side. The exact reason for Uranus’ unique rotation is unknown.",
+    p2: "Uranus’ rotation results in an unusual pattern of light and dark throughout the planet. The planet’s north pole would face 42-years of light then 42-years of darkness while the south pole faces the opposite cycle (Franck et al). "
 }
+
+export const rings = {
+    p1: "Uranus has 13 total, separated into 2 sets, surround it (<em>Uranus Facts</em>). The rings that appear dark gray in color and are narrower are the inner nine rings (<em>Uranus Facts</em>). The other two rings are reddish in color (<em>Uranus Facts</em>)."
+};

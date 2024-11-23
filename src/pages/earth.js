@@ -54,8 +54,12 @@ function Earth() {
                 color={planetColor}
             />
 
-            <section id='life'>
-                <h2>Life</h2>
+            <section id='life' className='glass-box'>
+                <div className='icon-head'>
+                    <i className="fa-solid fa-seedling"></i>
+                    <h2>Life</h2>
+                </div>
+                
                 <p>Earth is the only planet habitable by life, which in turn affects the planet. For example, planets are responsible for replenishing the oxygen in the atmosphere. We humans also affect the atmosphere by releasing gases such as ozone and excess carbon dioxide, resulting in non-equilibrium chemistry or reactions occurring in the atmosphere.</p>
             </section>
 

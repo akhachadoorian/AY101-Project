@@ -47,9 +47,9 @@ export const formationParts = {
 }
 
 export const coreFormation = {
-    paragraph1: "The nebula's center has a very high temperature, which decreases as you move to the outskirts. This temperature distribution affects the formation of protoplanetary cores — specifically their size and composition — by limiting the amount and type of material available.",
-    paragraph2: "The <strong>frost line</strong>, located between the orbits of Mars and Jupiter, designates the position within the nebula where elements besides hydrogen begin to condense. Thus, planets formed within the frost line are composed of rock and metal, whereas planets formed outside the frost line are composed of rock, metal, and ice.",
-    paragraph3: "For a protoplanetary core to develop a gas envelope, it must have a mass between 10 and 100 Earth masses. Once the core reaches this mass range, its gravity attracts nearby hydrogen and helium gas. This increase in mass allows the protoplanetary core to attract even more gas.",
+    paragraph1: "The nebula's center has a very high temperature, which decreases as you move outward. This temperature distribution affects the formation of protoplanetary cores — specifically their size and composition — by limiting the amount and type of material available. ",
+    paragraph2: "The <strong>frost line</strong>, located between the orbits of Mars and Jupiter, designates the position within the nebula where elements besides hydrogen begin to condense. Thus, planets formed within the frost line are composed of rock and metal, whereas planets formed outside the frost line are composed of rock, metal, and ice. ",
+    paragraph3: "For a protoplanetary core to develop a gas envelope, it must have a mass between 10 and 100 Earth masses (Balin). Once the core reaches this mass range, its gravity attracts nearby hydrogen and helium gas, which increases the protoplanet's mass and, in turn, gravity, allowing it to attract more gas.",
 }
 
 export const frostLine = {
