@@ -1,18 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import mercuryImage from "../images/Mercury.jpg";
-import venusImg from "../images/Venus.jpg";
-import earthImg from "../images/Earth.jpg";
-import marsPhoto from "../images/mars.jpg";
-import jupiterImg from "../images/Jupiter.jpg";
-import saturnImg from "../images/Saturn.jpg";
-import uranusImg from "../images/Uranus.jpg";
-import neptuneImg from "../images/Neptune.jpg";
 
 import mercuryIcon from "../images/MercuryIcon.svg";
 import venusIcon from "../images/VenusIcon.svg";
@@ -116,6 +108,29 @@ function SliderWithLinks() {
       },
     ],
   };
+
+  useEffect(() => {
+    const adjustSlideHeights = () => {
+      const sliders = document.querySelectorAll(".slider");
+      let maxHeight = 0;
+
+      sliders.forEach((slider) => {
+        slider.style.height = "auto"; // Reset to recalculate
+        maxHeight = Math.max(maxHeight, slider.offsetHeight);
+      });
+
+      sliders.forEach((slider) => {
+        slider.style.height = `${maxHeight}px`;
+      });
+    };
+
+    adjustSlideHeights(); // Adjust on initial load
+    window.addEventListener("resize", adjustSlideHeights); // Adjust on resize
+
+    return () => {
+      window.removeEventListener("resize", adjustSlideHeights);
+    };
+  }, []);
 
   return (
     <div>
